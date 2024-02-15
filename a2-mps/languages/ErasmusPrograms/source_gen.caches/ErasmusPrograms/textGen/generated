@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="bf38f3eyeeu167dwjfucjv3d1xbbyzj">
+  <files names="AdmissionStructure_TextGen.java:ApplicationProcess_TextGen.java:AssociatePartner_TextGen.java:Course_TextGen.java:DegreeRequirement_TextGen.java:DocumentRequirement_TextGen.java:ErasmusProgram_TextGen.java:LanguageRequirement_TextGen.java:Location_TextGen.java:Requirement_TextGen.java:Results_TextGen.java:Scholarship_TextGen.java:Step_TextGen.java:TextGenAspectDescriptor.java:University_TextGen.java" />
+</product>
+

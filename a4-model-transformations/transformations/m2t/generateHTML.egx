@@ -1,0 +1,15 @@
+rule ErasmusProgram2HTML 
+	transform ep : ErasmusProgram {
+
+	template : "template.egl"
+
+	parameters : Map{
+		"industrialPartners"=ep.associatePartners.select(p | p.type == PartnerType#Industrial),
+		"academicPartners"=ep.associatePartners.select(p | p.type == PartnerType#Academic),
+		"documentReqs"=ep.admissionStructure.requierements.select(r | r.isTypeOf(DocumentRequirement)),
+		"degreeReqs"=ep.admissionStructure.requierements.select(r | r.isTypeOf(DegreeRequirement)),
+		"languageReqs"=ep.admissionStructure.requierements.select(r | r.isTypeOf(LanguageRequirement))
+	}
+
+	target : ep.name.toLowerCase().replace(" ", "_") + ".html"
+}

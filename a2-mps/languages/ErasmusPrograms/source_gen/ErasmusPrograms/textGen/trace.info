@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1082113931046:jetbrains.mps.baseLanguage.structure.ContinueStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1144226303539:jetbrains.mps.baseLanguage.structure.ForeachStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123157:jetbrains.mps.baseLanguage.structure.Statement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <root>
+    <file name="TextGenAspectDescriptor.java">
+      <unit at="78,0,81,0" name="ErasmusPrograms.textGen.TextGenAspectDescriptor$CONCEPTS" />
+      <unit at="82,0,85,0" name="ErasmusPrograms.textGen.TextGenAspectDescriptor$PROPS" />
+      <unit at="18,0,86,0" name="ErasmusPrograms.textGen.TextGenAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725132381">
+    <file name="Course_TextGen.java">
+      <node id="4676225400725132381" at="14,54,15,55" concept="5" />
+      <node id="4676225400725132411" at="15,55,16,53" concept="1" />
+      <node id="4676225400725132412" at="16,53,17,18" concept="1" />
+      <node id="4676225400725132511" at="17,18,18,76" concept="1" />
+      <node id="4676225400725132793" at="18,76,19,29" concept="1" />
+      <node id="4676225400725132794" at="19,29,20,86" concept="1" />
+      <node id="4676225400725132798" at="20,86,21,24" concept="1" />
+      <node id="4676225400725134342" at="21,24,22,92" concept="1" />
+      <node id="4676225400725136304" at="22,92,23,22" concept="1" />
+      <node id="4676225400725132799" at="23,22,24,108" concept="1" />
+      <node id="4676225400725136712" at="24,108,25,22" concept="1" />
+      <node id="4676225400725136983" at="25,22,26,89" concept="1" />
+      <node id="4676225400725132804" at="26,89,27,23" concept="1" />
+      <node id="4676225400725132805" at="27,23,28,18" concept="1" />
+      <node id="4676225400725132381" at="32,0,33,0" concept="8" trace="name$MnvL" />
+      <node id="4676225400725132381" at="33,0,34,0" concept="8" trace="courseCode$AOzo" />
+      <node id="4676225400725132381" at="34,0,35,0" concept="8" trace="credits$APIt" />
+      <node id="4676225400725132381" at="35,0,36,0" concept="8" trace="faculty$AV_Q" />
+      <node id="4676225400725132381" at="13,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725132381" at="14,54,28,18">
+        <var name="tgs" id="4676225400725132381" />
+      </scope>
+      <scope id="4676225400725132381" at="13,0,30,0">
+        <var name="ctx" id="4676225400725132381" />
+      </scope>
+      <unit id="4676225400725132381" at="31,0,37,0" name="ErasmusPrograms.textGen.Course_TextGen$PROPS" />
+      <unit id="4676225400725132381" at="12,0,38,0" name="ErasmusPrograms.textGen.Course_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725132381" at="34,40,35,36" concept="6" />
+      <scope id="4676225400725132381" at="34,40,35,36" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725137335">
+    <file name="Location_TextGen.java">
+      <node id="4676225400725137335" at="14,54,15,55" concept="5" />
+      <node id="4676225400725137365" at="15,55,16,54" concept="1" />
+      <node id="4676225400725137366" at="16,54,17,18" concept="1" />
+      <node id="4676225400725138555" at="17,18,18,66" concept="1" />
+      <node id="4676225400725138857" at="18,66,19,29" concept="1" />
+      <node id="4676225400725138858" at="19,29,20,93" concept="1" />
+      <node id="4676225400725138862" at="20,93,21,24" concept="1" />
+      <node id="4676225400725138863" at="21,24,22,90" concept="1" />
+      <node id="4676225400725138868" at="22,90,23,23" concept="1" />
+      <node id="4676225400725138869" at="23,23,24,18" concept="1" />
+      <node id="4676225400725137335" at="28,0,29,0" concept="8" trace="countryName$B2sd" />
+      <node id="4676225400725137335" at="29,0,30,0" concept="8" trace="cityName$B2Uf" />
+      <node id="4676225400725137335" at="13,0,26,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725137335" at="14,54,24,18">
+        <var name="tgs" id="4676225400725137335" />
+      </scope>
+      <scope id="4676225400725137335" at="13,0,26,0">
+        <var name="ctx" id="4676225400725137335" />
+      </scope>
+      <unit id="4676225400725137335" at="27,0,31,0" name="ErasmusPrograms.textGen.Location_TextGen$PROPS" />
+      <unit id="4676225400725137335" at="12,0,32,0" name="ErasmusPrograms.textGen.Location_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725137335" at="44,42,45,38" concept="6" />
+      <scope id="4676225400725137335" at="44,42,45,38" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725146701">
+    <file name="AdmissionStructure_TextGen.java">
+      <node id="4676225400725146701" at="15,54,16,55" concept="5" />
+      <node id="4676225400725146737" at="17,95,18,27" concept="1" />
+      <node id="4676225400725146741" at="19,5,20,18" concept="1" />
+      <node id="4676225400725147481" at="21,106,22,27" concept="1" />
+      <node id="4676225400725147485" at="23,5,24,18" concept="1" />
+      <node id="4676225400725147563" at="25,100,26,27" concept="1" />
+      <node id="4676225400725147567" at="27,5,28,18" concept="1" />
+      <node id="4676225400725147450" at="28,18,29,0" concept="7" />
+      <node id="4676225400725146701" at="33,0,34,0" concept="8" trace="results$BZmL" />
+      <node id="4676225400725146701" at="34,0,35,0" concept="8" trace="applicationProcess$BTIp" />
+      <node id="4676225400725146701" at="35,0,36,0" concept="8" trace="requirements$BTgn" />
+      <node id="4676225400725146737" at="16,55,19,5" concept="2" />
+      <node id="4676225400725147481" at="20,18,23,5" concept="2" />
+      <node id="4676225400725147563" at="24,18,27,5" concept="2" />
+      <node id="4676225400725146701" at="14,0,31,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725146737" at="17,95,18,27" />
+      <scope id="4676225400725147481" at="21,106,22,27" />
+      <scope id="4676225400725147563" at="25,100,26,27" />
+      <scope id="4676225400725146737" at="16,55,19,5">
+        <var name="item" id="4676225400725146737" />
+      </scope>
+      <scope id="4676225400725147481" at="20,18,23,5">
+        <var name="item" id="4676225400725147481" />
+      </scope>
+      <scope id="4676225400725147563" at="24,18,27,5">
+        <var name="item" id="4676225400725147563" />
+      </scope>
+      <scope id="4676225400725146701" at="15,54,29,0">
+        <var name="tgs" id="4676225400725146701" />
+      </scope>
+      <scope id="4676225400725146701" at="14,0,31,0">
+        <var name="ctx" id="4676225400725146701" />
+      </scope>
+      <unit id="4676225400725146701" at="32,0,37,0" name="ErasmusPrograms.textGen.AdmissionStructure_TextGen$LINKS" />
+      <unit id="4676225400725146701" at="13,0,38,0" name="ErasmusPrograms.textGen.AdmissionStructure_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725146701" at="28,52,29,48" concept="6" />
+      <scope id="4676225400725146701" at="28,52,29,48" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725148361">
+    <file name="Results_TextGen.java">
+      <node id="4676225400725148361" at="14,54,15,55" concept="5" />
+      <node id="4676225400725148393" at="15,55,16,53" concept="1" />
+      <node id="4676225400725148394" at="16,53,17,18" concept="1" />
+      <node id="4676225400725148472" at="17,18,18,102" concept="1" />
+      <node id="4676225400725148873" at="18,102,19,27" concept="1" />
+      <node id="4676225400725148874" at="19,27,20,105" concept="1" />
+      <node id="4676225400725148879" at="20,105,21,20" concept="1" />
+      <node id="4676225400725151383" at="21,20,22,114" concept="1" />
+      <node id="4676225400725152874" at="22,114,23,20" concept="1" />
+      <node id="4676225400725153230" at="23,20,24,120" concept="1" />
+      <node id="4676225400725148884" at="24,120,25,22" concept="1" />
+      <node id="4676225400725148885" at="25,22,26,98" concept="1" />
+      <node id="4676225400725148890" at="26,98,27,23" concept="1" />
+      <node id="4676225400725148891" at="27,23,28,18" concept="1" />
+      <node id="4676225400725148361" at="32,0,33,0" concept="8" trace="year$Bcio" />
+      <node id="4676225400725148361" at="33,0,34,0" concept="8" trace="totalAdmitted$BhFJ" />
+      <node id="4676225400725148361" at="34,0,35,0" concept="8" trace="scholarshipsAwarded$BiBN" />
+      <node id="4676225400725148361" at="35,0,36,0" concept="8" trace="admittedStudents$BjzR" />
+      <node id="4676225400725148361" at="13,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725148361" at="14,54,28,18">
+        <var name="tgs" id="4676225400725148361" />
+      </scope>
+      <scope id="4676225400725148361" at="13,0,30,0">
+        <var name="ctx" id="4676225400725148361" />
+      </scope>
+      <unit id="4676225400725148361" at="31,0,37,0" name="ErasmusPrograms.textGen.Results_TextGen$PROPS" />
+      <unit id="4676225400725148361" at="12,0,38,0" name="ErasmusPrograms.textGen.Results_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725148361" at="48,41,49,37" concept="6" />
+      <scope id="4676225400725148361" at="48,41,49,37" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725160677">
+    <file name="ApplicationProcess_TextGen.java">
+      <node id="4676225400725160677" at="15,54,16,55" concept="5" />
+      <node id="4676225400725160705" at="17,93,18,27" concept="1" />
+      <node id="4676225400725160709" at="19,5,20,18" concept="1" />
+      <node id="4676225400725160677" at="24,0,25,0" concept="8" trace="steps$lm0s" />
+      <node id="4676225400725160705" at="16,55,19,5" concept="2" />
+      <node id="4676225400725160677" at="14,0,22,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725160705" at="17,93,18,27" />
+      <scope id="4676225400725160705" at="16,55,19,5">
+        <var name="item" id="4676225400725160705" />
+      </scope>
+      <scope id="4676225400725160677" at="15,54,20,18">
+        <var name="tgs" id="4676225400725160677" />
+      </scope>
+      <scope id="4676225400725160677" at="14,0,22,0">
+        <var name="ctx" id="4676225400725160677" />
+      </scope>
+      <unit id="4676225400725160677" at="23,0,26,0" name="ErasmusPrograms.textGen.ApplicationProcess_TextGen$LINKS" />
+      <unit id="4676225400725160677" at="13,0,27,0" name="ErasmusPrograms.textGen.ApplicationProcess_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725160677" at="30,52,31,48" concept="6" />
+      <scope id="4676225400725160677" at="30,52,31,48" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725161421">
+    <file name="Step_TextGen.java">
+      <node id="4676225400725161421" at="14,54,15,55" concept="5" />
+      <node id="4676225400725161697" at="15,55,16,51" concept="1" />
+      <node id="4676225400725161698" at="16,51,17,18" concept="1" />
+      <node id="4676225400725161776" at="17,18,18,78" concept="1" />
+      <node id="4676225400725162104" at="18,78,19,29" concept="1" />
+      <node id="4676225400725162105" at="19,29,20,86" concept="1" />
+      <node id="4676225400725162110" at="20,86,21,24" concept="1" />
+      <node id="4676225400725162111" at="21,24,22,93" concept="1" />
+      <node id="4676225400725162115" at="22,93,23,24" concept="1" />
+      <node id="4676225400725162116" at="23,24,24,91" concept="1" />
+      <node id="4676225400725168613" at="24,91,25,24" concept="1" />
+      <node id="4676225400725168854" at="25,24,26,89" concept="1" />
+      <node id="4676225400725162121" at="26,89,27,23" concept="1" />
+      <node id="4676225400725162122" at="27,23,28,18" concept="1" />
+      <node id="4676225400725161421" at="32,0,33,0" concept="8" trace="name$MnvL" />
+      <node id="4676225400725161421" at="33,0,34,0" concept="8" trace="description$kR1q" />
+      <node id="4676225400725161421" at="34,0,35,0" concept="8" trace="startDate$kRIt" />
+      <node id="4676225400725161421" at="35,0,36,0" concept="8" trace="endDate$kX_Q" />
+      <node id="4676225400725161421" at="13,0,30,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725161421" at="14,54,28,18">
+        <var name="tgs" id="4676225400725161421" />
+      </scope>
+      <scope id="4676225400725161421" at="13,0,30,0">
+        <var name="ctx" id="4676225400725161421" />
+      </scope>
+      <unit id="4676225400725161421" at="31,0,37,0" name="ErasmusPrograms.textGen.Step_TextGen$PROPS" />
+      <unit id="4676225400725161421" at="12,0,38,0" name="ErasmusPrograms.textGen.Step_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725161421" at="52,38,53,34" concept="6" />
+      <scope id="4676225400725161421" at="52,38,53,34" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725170101">
+    <file name="Requirement_TextGen.java">
+      <node id="4676225400725170101" at="13,54,14,55" concept="5" />
+      <node id="4676225400725170129" at="15,75,16,27" concept="1" />
+      <node id="4676225400725170129" at="14,55,17,5" concept="2" />
+      <node id="4676225400725170101" at="12,0,19,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725170129" at="15,75,16,27" />
+      <scope id="4676225400725170129" at="14,55,17,5">
+        <var name="item" id="4676225400725170129" />
+      </scope>
+      <scope id="4676225400725170101" at="13,54,17,5">
+        <var name="tgs" id="4676225400725170101" />
+      </scope>
+      <scope id="4676225400725170101" at="12,0,19,0">
+        <var name="ctx" id="4676225400725170101" />
+      </scope>
+      <unit id="4676225400725170101" at="11,0,20,0" name="ErasmusPrograms.textGen.Requirement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725170101" at="46,45,47,41" concept="6" />
+      <scope id="4676225400725170101" at="46,45,47,41" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725170983">
+    <file name="LanguageRequirement_TextGen.java">
+      <node id="4676225400725170983" at="14,54,15,55" concept="5" />
+      <node id="4676225400725171016" at="15,55,16,67" concept="1" />
+      <node id="4676225400725171017" at="16,67,17,18" concept="1" />
+      <node id="4676225400725171164" at="17,18,18,54" concept="1" />
+      <node id="4676225400725171308" at="18,54,19,29" concept="1" />
+      <node id="4676225400725171309" at="19,29,20,86" concept="1" />
+      <node id="4676225400725171314" at="20,86,21,24" concept="1" />
+      <node id="4676225400725171315" at="21,24,22,101" concept="1" />
+      <node id="4676225400725171325" at="22,101,23,23" concept="1" />
+      <node id="4676225400725171326" at="23,23,24,18" concept="1" />
+      <node id="4676225400725170983" at="28,0,29,0" concept="8" trace="name$MnvL" />
+      <node id="4676225400725170983" at="29,0,30,0" concept="8" trace="level$hUVf" />
+      <node id="4676225400725170983" at="13,0,26,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725170983" at="14,54,24,18">
+        <var name="tgs" id="4676225400725170983" />
+      </scope>
+      <scope id="4676225400725170983" at="13,0,26,0">
+        <var name="ctx" id="4676225400725170983" />
+      </scope>
+      <unit id="4676225400725170983" at="27,0,31,0" name="ErasmusPrograms.textGen.LanguageRequirement_TextGen$PROPS" />
+      <unit id="4676225400725170983" at="12,0,32,0" name="ErasmusPrograms.textGen.LanguageRequirement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725170983" at="42,53,43,49" concept="6" />
+      <scope id="4676225400725170983" at="42,53,43,49" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725176585">
+    <file name="DocumentRequirement_TextGen.java">
+      <node id="4676225400725176585" at="14,54,15,55" concept="5" />
+      <node id="4676225400725177852" at="15,55,16,67" concept="1" />
+      <node id="4676225400725177853" at="16,67,17,18" concept="1" />
+      <node id="4676225400725177931" at="17,18,18,60" concept="1" />
+      <node id="4676225400725178881" at="18,60,19,29" concept="1" />
+      <node id="4676225400725178882" at="19,29,20,86" concept="1" />
+      <node id="4676225400725178886" at="20,86,21,24" concept="1" />
+      <node id="4676225400725178887" at="21,24,22,93" concept="1" />
+      <node id="4676225400725178892" at="22,93,23,23" concept="1" />
+      <node id="4676225400725178893" at="23,23,24,18" concept="1" />
+      <node id="4676225400725176585" at="28,0,29,0" concept="8" trace="name$MnvL" />
+      <node id="4676225400725176585" at="29,0,30,0" concept="8" trace="description$hOyU" />
+      <node id="4676225400725176585" at="13,0,26,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725176585" at="14,54,24,18">
+        <var name="tgs" id="4676225400725176585" />
+      </scope>
+      <scope id="4676225400725176585" at="13,0,26,0">
+        <var name="ctx" id="4676225400725176585" />
+      </scope>
+      <unit id="4676225400725176585" at="27,0,31,0" name="ErasmusPrograms.textGen.DocumentRequirement_TextGen$PROPS" />
+      <unit id="4676225400725176585" at="12,0,32,0" name="ErasmusPrograms.textGen.DocumentRequirement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725176585" at="38,53,39,49" concept="6" />
+      <scope id="4676225400725176585" at="38,53,39,49" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/4676225400725182135">
+    <file name="DegreeRequirement_TextGen.java">
+      <node id="4676225400725182135" at="14,54,15,55" concept="5" />
+      <node id="4676225400725182167" at="15,55,16,65" concept="1" />
+      <node id="4676225400725182168" at="16,65,17,18" concept="1" />
+      <node id="4676225400725182246" at="17,18,18,68" concept="1" />
+      <node id="4676225400725182413" at="18,68,19,29" concept="1" />
+      <node id="4676225400725182414" at="19,29,20,86" concept="1" />
+      <node id="4676225400725182418" at="20,86,21,24" concept="1" />
+      <node id="4676225400725184457" at="21,24,22,94" concept="1" />
+      <node id="4676225400725185931" at="22,94,23,24" concept="1" />
+      <node id="4676225400725182419" at="23,24,24,101" concept="1" />
+      <node id="4676225400725182424" at="24,101,25,23" concept="1" />
+      <node id="4676225400725182425" at="25,23,26,18" concept="1" />
+      <node id="4676225400725182135" at="30,0,31,0" concept="8" trace="name$MnvL" />
+      <node id="4676225400725182135" at="31,0,32,0" concept="8" trace="fieldOfStudy$kZYU" />
+      <node id="4676225400725182135" at="32,0,33,0" concept="8" trace="level$l5Bi" />
+      <node id="4676225400725182135" at="13,0,28,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725182135" at="14,54,26,18">
+        <var name="tgs" id="4676225400725182135" />
+      </scope>
+      <scope id="4676225400725182135" at="13,0,28,0">
+        <var name="ctx" id="4676225400725182135" />
+      </scope>
+      <unit id="4676225400725182135" at="29,0,34,0" name="ErasmusPrograms.textGen.DegreeRequirement_TextGen$PROPS" />
+      <unit id="4676225400725182135" at="12,0,35,0" name="ErasmusPrograms.textGen.DegreeRequirement_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="4676225400725182135" at="36,51,37,47" concept="6" />
+      <scope id="4676225400725182135" at="36,51,37,47" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/8411917052161291951">
+    <file name="ErasmusProgram_TextGen.java">
+      <node id="8411917052161291951" at="17,54,18,55" concept="5" />
+      <node id="8411917052163305884" at="18,55,19,54" concept="1" />
+      <node id="8411917052163305890" at="19,54,20,18" concept="1" />
+      <node id="8411917052163305902" at="20,18,21,65" concept="1" />
+      <node id="8411917052163305917" at="21,65,22,27" concept="1" />
+      <node id="8411917052163305927" at="22,27,23,103" concept="1" />
+      <node id="8411917052163312799" at="23,103,24,23" concept="1" />
+      <node id="8411917052163312804" at="24,23,25,86" concept="1" />
+      <node id="8411917052163318222" at="25,86,26,23" concept="1" />
+      <node id="8411917052163318227" at="26,23,27,113" concept="1" />
+      <node id="8411917052163323108" at="27,113,28,21" concept="1" />
+      <node id="8411917052163822066" at="28,21,29,18" concept="1" />
+      <node id="8411917052163822076" at="30,100,31,27" concept="1" />
+      <node id="8411917052164650973" at="32,5,33,18" concept="1" />
+      <node id="8411917052164652625" at="34,100,35,27" concept="1" />
+      <node id="8411917052164653819" at="36,5,37,18" concept="1" />
+      <node id="8411917052164930025" at="38,104,39,27" concept="1" />
+      <node id="8411917052164932313" at="40,5,41,18" concept="1" />
+      <node id="4676225400727647473" at="41,18,42,100" concept="1" />
+      <node id="4676225400727648947" at="42,100,43,18" concept="1" />
+      <node id="8411917052161291951" at="47,0,48,0" concept="8" trace="id$DjzG" />
+      <node id="8411917052161291951" at="48,0,49,0" concept="8" trace="name$MnvL" />
+      <node id="8411917052161291951" at="49,0,50,0" concept="8" trace="totalCredits$ZklR" />
+      <node id="8411917052161291951" at="53,0,54,0" concept="8" trace="scholarships$3kWr" />
+      <node id="8411917052161291951" at="54,0,55,0" concept="8" trace="universities$3jyl" />
+      <node id="8411917052161291951" at="55,0,56,0" concept="8" trace="associatePartner$3lDu" />
+      <node id="8411917052161291951" at="56,0,57,0" concept="8" trace="admissionStructure$FG62" />
+      <node id="8411917052163822076" at="29,18,32,5" concept="2" />
+      <node id="8411917052164652625" at="33,18,36,5" concept="2" />
+      <node id="8411917052164930025" at="37,18,40,5" concept="2" />
+      <node id="8411917052161291951" at="16,0,45,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8411917052163822076" at="30,100,31,27" />
+      <scope id="8411917052164652625" at="34,100,35,27" />
+      <scope id="8411917052164930025" at="38,104,39,27" />
+      <scope id="8411917052163822076" at="29,18,32,5">
+        <var name="item" id="8411917052163822076" />
+      </scope>
+      <scope id="8411917052164652625" at="33,18,36,5">
+        <var name="item" id="8411917052164652625" />
+      </scope>
+      <scope id="8411917052164930025" at="37,18,40,5">
+        <var name="item" id="8411917052164930025" />
+      </scope>
+      <scope id="8411917052161291951" at="17,54,43,18">
+        <var name="tgs" id="8411917052161291951" />
+      </scope>
+      <scope id="8411917052161291951" at="16,0,45,0">
+        <var name="ctx" id="8411917052161291951" />
+      </scope>
+      <unit id="8411917052161291951" at="46,0,51,0" name="ErasmusPrograms.textGen.ErasmusProgram_TextGen$PROPS" />
+      <unit id="8411917052161291951" at="52,0,58,0" name="ErasmusPrograms.textGen.ErasmusProgram_TextGen$LINKS" />
+      <unit id="8411917052161291951" at="15,0,59,0" name="ErasmusPrograms.textGen.ErasmusProgram_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8411917052161291951" at="40,48,41,44" concept="6" />
+      <node id="8411917052161291951" at="63,65,64,56" concept="5" />
+      <node id="8411917052161291951" at="64,56,65,59" concept="5" />
+      <node id="8411917052161291951" at="65,59,66,84" concept="1" />
+      <node id="8411917052161291951" at="66,84,67,17" concept="0" />
+      <node id="8411917052161295772" at="71,64,72,64" concept="6" />
+      <node id="8411917052161300315" at="74,69,75,17" concept="6" />
+      <node id="8411917052161291951" at="71,0,74,0" concept="9" trace="getFileName_ErasmusProgram#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8411917052161291951" at="74,0,77,0" concept="9" trace="getFileExtension_ErasmusProgram#(Lorg/jetbrains/mps/openapi/model/SNode;)Ljava/lang/String;" />
+      <node id="8411917052161291951" at="62,58,68,7" concept="3" />
+      <scope id="8411917052161291951" at="40,48,41,44" />
+      <scope id="8411917052161291951" at="71,64,72,64" />
+      <scope id="8411917052161291951" at="74,69,75,17" />
+      <scope id="8411917052161291951" at="71,0,74,0">
+        <var name="node" id="8411917052161291951" />
+      </scope>
+      <scope id="8411917052161291951" at="74,0,77,0">
+        <var name="node" id="8411917052161291951" />
+      </scope>
+      <scope id="8411917052161291951" at="63,65,67,17">
+        <var name="ext" id="8411917052161291951" />
+        <var name="fname" id="8411917052161291951" />
+      </scope>
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/8411917052162739900">
+    <file name="Scholarship_TextGen.java">
+      <node id="8411917052162739900" at="14,54,15,55" concept="5" />
+      <node id="8411917052163808923" at="15,55,16,58" concept="1" />
+      <node id="8411917052164125481" at="16,58,17,18" concept="1" />
+      <node id="8411917052163808942" at="17,18,18,94" concept="1" />
+      <node id="8411917052163808951" at="18,94,19,29" concept="1" />
+      <node id="8411917052163816408" at="19,29,20,86" concept="1" />
+      <node id="8411917052164515367" at="20,86,21,24" concept="1" />
+      <node id="8411917052163817586" at="21,24,22,100" concept="1" />
+      <node id="8411917052164515372" at="22,100,23,22" concept="1" />
+      <node id="8411917052163818713" at="23,22,24,111" concept="1" />
+      <node id="8411917052164515377" at="24,111,25,20" concept="1" />
+      <node id="8411917052163820934" at="25,20,26,112" concept="1" />
+      <node id="8411917052164790288" at="26,112,27,20" concept="1" />
+      <node id="8411917052164790293" at="27,20,28,110" concept="1" />
+      <node id="8411917052163808968" at="28,110,29,21" concept="1" />
+      <node id="4676225400728413880" at="29,21,30,18" concept="1" />
+      <node id="8411917052162739900" at="34,0,35,0" concept="8" trace="name$MnvL" />
+      <node id="8411917052162739900" at="35,0,36,0" concept="8" trace="type$zKQT" />
+      <node id="8411917052162739900" at="36,0,37,0" concept="8" trace="tuitionFee$$6sl" />
+      <node id="8411917052162739900" at="37,0,38,0" concept="8" trace="travelGrant$$7Bq" />
+      <node id="8411917052162739900" at="38,0,39,0" concept="8" trace="allowance$AAdY" />
+      <node id="8411917052162739900" at="13,0,32,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8411917052162739900" at="14,54,30,18">
+        <var name="tgs" id="8411917052162739900" />
+      </scope>
+      <scope id="8411917052162739900" at="13,0,32,0">
+        <var name="ctx" id="8411917052162739900" />
+      </scope>
+      <unit id="8411917052162739900" at="33,0,40,0" name="ErasmusPrograms.textGen.Scholarship_TextGen$PROPS" />
+      <unit id="8411917052162739900" at="12,0,41,0" name="ErasmusPrograms.textGen.Scholarship_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8411917052162739900" at="50,45,51,41" concept="6" />
+      <scope id="8411917052162739900" at="50,45,51,41" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/8411917052164650977">
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8411917052164650977" at="54,44,55,40" concept="6" />
+      <scope id="8411917052164650977" at="54,44,55,40" />
+    </file>
+    <file name="University_TextGen.java">
+      <node id="8411917052164650977" at="17,54,18,55" concept="5" />
+      <node id="8411917052164650982" at="18,55,19,58" concept="1" />
+      <node id="8411917052164650983" at="19,58,20,18" concept="1" />
+      <node id="8411917052164650988" at="20,18,21,58" concept="1" />
+      <node id="8411917052164650993" at="21,58,22,29" concept="1" />
+      <node id="8411917052164650994" at="22,29,23,86" concept="1" />
+      <node id="8411917052164650999" at="23,86,24,22" concept="1" />
+      <node id="8411917052164651005" at="24,22,25,108" concept="1" />
+      <node id="8411917052164651010" at="25,108,26,21" concept="1" />
+      <node id="8411917052164651011" at="26,21,27,18" concept="1" />
+      <node id="4676225400725128609" at="28,95,29,27" concept="1" />
+      <node id="4676225400725128613" at="30,5,31,18" concept="1" />
+      <node id="4676225400727193446" at="31,18,32,90" concept="1" />
+      <node id="4676225400727195750" at="32,90,33,18" concept="1" />
+      <node id="8411917052164650977" at="37,0,38,0" concept="8" trace="name$MnvL" />
+      <node id="8411917052164650977" at="38,0,39,0" concept="8" trace="credits$AIfq" />
+      <node id="8411917052164650977" at="42,0,43,0" concept="8" trace="courses$BEeS" />
+      <node id="8411917052164650977" at="43,0,44,0" concept="8" trace="location$fFN3" />
+      <node id="4676225400725128609" at="27,18,30,5" concept="2" />
+      <node id="8411917052164650977" at="16,0,35,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="4676225400725128609" at="28,95,29,27" />
+      <scope id="4676225400725128609" at="27,18,30,5">
+        <var name="item" id="4676225400725128609" />
+      </scope>
+      <scope id="8411917052164650977" at="17,54,33,18">
+        <var name="tgs" id="8411917052164650977" />
+      </scope>
+      <scope id="8411917052164650977" at="16,0,35,0">
+        <var name="ctx" id="8411917052164650977" />
+      </scope>
+      <unit id="8411917052164650977" at="36,0,40,0" name="ErasmusPrograms.textGen.University_TextGen$PROPS" />
+      <unit id="8411917052164650977" at="41,0,45,0" name="ErasmusPrograms.textGen.University_TextGen$LINKS" />
+      <unit id="8411917052164650977" at="15,0,46,0" name="ErasmusPrograms.textGen.University_TextGen" />
+    </file>
+  </root>
+  <root nodeRef="r:6671f2a8-2119-4cd1-9085-e97cc00177ff(ErasmusPrograms.textGen)/8411917052164926909">
+    <file name="AssociatePartner_TextGen.java">
+      <node id="8411917052164926909" at="14,54,15,55" concept="5" />
+      <node id="8411917052164926914" at="15,55,16,54" concept="1" />
+      <node id="8411917052164926915" at="16,54,17,18" concept="1" />
+      <node id="8411917052164926920" at="17,18,18,52" concept="1" />
+      <node id="8411917052164926925" at="18,52,19,29" concept="1" />
+      <node id="8411917052164926926" at="19,29,20,86" concept="1" />
+      <node id="8411917052164926931" at="20,86,21,24" concept="1" />
+      <node id="8411917052164926932" at="21,24,22,100" concept="1" />
+      <node id="8411917052164926942" at="22,100,23,23" concept="1" />
+      <node id="4676225400728567855" at="23,23,24,18" concept="1" />
+      <node id="8411917052164926909" at="28,0,29,0" concept="8" trace="name$B43o" />
+      <node id="8411917052164926909" at="29,0,30,0" concept="8" trace="type$BaQP" />
+      <node id="8411917052164926909" at="13,0,26,0" concept="4" trace="generateText#(Ljetbrains/mps/text/rt/TextGenContext;)V" />
+      <scope id="8411917052164926909" at="14,54,24,18">
+        <var name="tgs" id="8411917052164926909" />
+      </scope>
+      <scope id="8411917052164926909" at="13,0,26,0">
+        <var name="ctx" id="8411917052164926909" />
+      </scope>
+      <unit id="8411917052164926909" at="27,0,31,0" name="ErasmusPrograms.textGen.AssociatePartner_TextGen$PROPS" />
+      <unit id="8411917052164926909" at="12,0,32,0" name="ErasmusPrograms.textGen.AssociatePartner_TextGen" />
+    </file>
+    <file name="TextGenAspectDescriptor.java">
+      <node id="8411917052164926909" at="32,50,33,46" concept="6" />
+      <scope id="8411917052164926909" at="32,50,33,46" />
+    </file>
+  </root>
+</debug-info>
+

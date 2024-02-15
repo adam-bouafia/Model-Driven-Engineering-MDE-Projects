@@ -1,0 +1,61 @@
+ErasmusProgram "Engineering of Data-intensive Intelligent Software Systems" {
+	totalCredits 120
+	universities {
+		University "Åbo Akademi University" {
+			location { country: "Finland" city: "Turku"}
+			credits 60
+			courses {
+				{ code: "DS001" name: "Data Science" faculty: "Faculty of Science and Engineering" credits: 5 }
+			}
+		}
+	}
+	scholarships {
+		Partner_Country {
+			tuitionFee 9000
+			travelGrant 2000
+			allowance 1000
+		},
+		Program_Country {
+			tuitionFee 4500
+			travelGrant 4000
+			allowance 1000
+		}
+	}
+	associatePartners {
+		"Volvo Construction Equipment AB" (Industrial),
+		"University of Turku" (Academic)
+	}
+	admissionStructure {
+		applicationProcess {
+			steps {
+				Step "Prepare application" {
+					description "Collect the required documents"
+					startDate 2023-11-01
+					endDate 2024-01-02
+				}
+			}
+		}
+		requirements {
+			DegreeRequirement {
+				degreeName "Bachelor in Computer Science"
+				fieldOfStudy "Computer Science"
+				level Bachelor
+			},
+			DocumentRequirement {
+				documentName "Transcript of Records"
+				description "Officially certified Transcript of Records"
+			},
+			LanguageRequirement { language "English" level A1 }
+		}
+		results {
+			Year 2022 {
+				totalAdmitted 25
+				scholarshipsAwarded 24
+				admittedStudents {
+					"Juan Perez - Peru",
+					"Sherkhan Chavez - Iran"
+				}
+			}
+		}
+	}
+}

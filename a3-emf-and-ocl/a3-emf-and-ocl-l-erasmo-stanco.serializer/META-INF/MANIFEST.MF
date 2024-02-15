@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Serializer
+Bundle-SymbolicName: a3-emf-and-ocl-l-erasmo-stanco.serializer
+Bundle-Version: 1.0.0
+Export-Package: a3_Erasmo_Stanco_Group.serializer
+Require-Bundle: a3-emf-and-ocl-l-erasmo-stanco.model;bundle-version="0.1.0",
+ org.eclipse.emf.ecore.xmi;bundle-version="2.36.0",
+ org.eclipse.emf.ecore;bundle-version="2.35.0"
+Automatic-Module-Name: a3.emf.and.ocl.l.erasmo.stanco.serializer
+Bundle-RequiredExecutionEnvironment: JavaSE-17

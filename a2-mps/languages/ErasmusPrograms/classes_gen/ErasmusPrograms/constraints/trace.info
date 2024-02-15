@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="13,0,35,0" name="ErasmusPrograms.constraints.ConstraintsAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:d62249e9-1888-40f9-9c51-bbbb092b81e0(ErasmusPrograms.constraints)/2749287990149572827">
+    <file name="ErasmusProgram_Constraints.java">
+      <node id="2749287990149572827" at="20,39,21,38" concept="8" />
+      <node id="2749287990149572830" at="25,67,26,68" concept="8" />
+      <node id="2749287990149572830" at="29,109,30,100" concept="4" />
+      <node id="2749287990149572830" at="31,53,32,156" concept="1" />
+      <node id="2749287990149572830" at="33,7,34,20" concept="5" />
+      <node id="8411917052160606844" at="36,82,37,80" concept="5" />
+      <node id="2749287990149572827" at="41,84,42,119" concept="4" />
+      <node id="2749287990149572830" at="42,119,43,77" concept="1" />
+      <node id="2749287990149572827" at="43,77,44,22" concept="5" />
+      <node id="2749287990149572827" at="48,0,49,0" concept="6" trace="ErasmusProgram$Le" />
+      <node id="2749287990149572827" at="52,0,53,0" concept="6" trace="totalCredits$ZklR" />
+      <node id="2749287990149572827" at="20,0,23,0" concept="0" trace="ErasmusProgram_Constraints#()V" />
+      <node id="2749287990149572830" at="25,0,28,0" concept="0" trace="TotalCredits_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2749287990149572830" at="30,100,33,7" concept="2" />
+      <node id="2749287990149572830" at="36,0,39,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="2749287990149572827" at="40,0,46,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="2749287990149572830" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="2749287990149572827" at="20,39,21,38" />
+      <scope id="2749287990149572830" at="25,67,26,68" />
+      <scope id="2749287990149572830" at="31,53,32,156" />
+      <scope id="2749287990149573069" at="36,82,37,80" />
+      <scope id="2749287990149572827" at="20,0,23,0" />
+      <scope id="2749287990149572830" at="25,0,28,0">
+        <var name="container" id="2749287990149572830" />
+      </scope>
+      <scope id="2749287990149572830" at="36,0,39,0">
+        <var name="node" id="2749287990149572830" />
+        <var name="propertyValue" id="2749287990149572830" />
+      </scope>
+      <scope id="2749287990149572827" at="41,84,44,22">
+        <var name="properties" id="2749287990149572827" />
+      </scope>
+      <scope id="2749287990149572830" at="29,109,34,20">
+        <var name="result" id="2749287990149572830" />
+      </scope>
+      <scope id="2749287990149572827" at="40,0,46,0" />
+      <scope id="2749287990149572830" at="28,0,36,0">
+        <var name="checkingNodeContext" id="2749287990149572830" />
+        <var name="node" id="2749287990149572830" />
+        <var name="propertyValue" id="2749287990149572830" />
+      </scope>
+      <unit id="2749287990149572827" at="47,0,50,0" name="ErasmusPrograms.constraints.ErasmusProgram_Constraints$CONCEPTS" />
+      <unit id="2749287990149572827" at="51,0,54,0" name="ErasmusPrograms.constraints.ErasmusProgram_Constraints$PROPS" />
+      <unit id="2749287990149572830" at="24,0,40,0" name="ErasmusPrograms.constraints.ErasmusProgram_Constraints$TotalCredits_Property" />
+      <unit id="2749287990149572827" at="19,0,55,0" name="ErasmusPrograms.constraints.ErasmusProgram_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d62249e9-1888-40f9-9c51-bbbb092b81e0(ErasmusPrograms.constraints)/2749287990149730786">
+    <file name="University_Constraints.java">
+      <node id="2749287990149730786" at="20,35,21,34" concept="8" />
+      <node id="2749287990149730787" at="25,62,26,63" concept="8" />
+      <node id="2749287990149730787" at="29,109,30,100" concept="4" />
+      <node id="2749287990149730787" at="31,53,32,156" concept="1" />
+      <node id="2749287990149730787" at="33,7,34,20" concept="5" />
+      <node id="8411917052160452632" at="36,82,37,31" concept="5" />
+      <node id="2749287990149730786" at="41,84,42,119" concept="4" />
+      <node id="2749287990149730787" at="42,119,43,67" concept="1" />
+      <node id="2749287990149730786" at="43,67,44,22" concept="5" />
+      <node id="2749287990149730786" at="48,0,49,0" concept="6" trace="University$69" />
+      <node id="2749287990149730786" at="52,0,53,0" concept="6" trace="credits$AIfq" />
+      <node id="2749287990149730786" at="20,0,23,0" concept="0" trace="University_Constraints#()V" />
+      <node id="2749287990149730787" at="25,0,28,0" concept="0" trace="Credits_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="2749287990149730787" at="30,100,33,7" concept="2" />
+      <node id="2749287990149730787" at="36,0,39,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;I)Z" />
+      <node id="2749287990149730786" at="40,0,46,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="2749287990149730787" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="2749287990149730786" at="20,35,21,34" />
+      <scope id="2749287990149730787" at="25,62,26,63" />
+      <scope id="2749287990149730787" at="31,53,32,156" />
+      <scope id="2749287990149730937" at="36,82,37,31" />
+      <scope id="2749287990149730786" at="20,0,23,0" />
+      <scope id="2749287990149730787" at="25,0,28,0">
+        <var name="container" id="2749287990149730787" />
+      </scope>
+      <scope id="2749287990149730787" at="36,0,39,0">
+        <var name="node" id="2749287990149730787" />
+        <var name="propertyValue" id="2749287990149730787" />
+      </scope>
+      <scope id="2749287990149730786" at="41,84,44,22">
+        <var name="properties" id="2749287990149730786" />
+      </scope>
+      <scope id="2749287990149730787" at="29,109,34,20">
+        <var name="result" id="2749287990149730787" />
+      </scope>
+      <scope id="2749287990149730786" at="40,0,46,0" />
+      <scope id="2749287990149730787" at="28,0,36,0">
+        <var name="checkingNodeContext" id="2749287990149730787" />
+        <var name="node" id="2749287990149730787" />
+        <var name="propertyValue" id="2749287990149730787" />
+      </scope>
+      <unit id="2749287990149730786" at="47,0,50,0" name="ErasmusPrograms.constraints.University_Constraints$CONCEPTS" />
+      <unit id="2749287990149730786" at="51,0,54,0" name="ErasmusPrograms.constraints.University_Constraints$PROPS" />
+      <unit id="2749287990149730787" at="24,0,40,0" name="ErasmusPrograms.constraints.University_Constraints$Credits_Property" />
+      <unit id="2749287990149730786" at="19,0,55,0" name="ErasmusPrograms.constraints.University_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d62249e9-1888-40f9-9c51-bbbb092b81e0(ErasmusPrograms.constraints)/4676225400724121285">
+    <file name="Requirement_Constraints.java">
+      <node id="4676225400724121285" at="10,36,11,35" concept="8" />
+      <node id="4676225400724121285" at="15,47,16,41" concept="5" />
+      <node id="4676225400724121285" at="20,0,21,0" concept="6" trace="Requirement$wf" />
+      <node id="4676225400724121285" at="21,0,22,0" concept="6" trace="DegreeRequirement$DC" />
+      <node id="4676225400724121285" at="10,0,13,0" concept="0" trace="Requirement_Constraints#()V" />
+      <node id="4676225400724121285" at="14,0,18,0" concept="3" trace="getDefaultConcreteConcept#()Lorg/jetbrains/mps/openapi/language/SConcept;" />
+      <scope id="4676225400724121285" at="10,36,11,35" />
+      <scope id="4676225400724121285" at="15,47,16,41" />
+      <scope id="4676225400724121285" at="10,0,13,0" />
+      <scope id="4676225400724121285" at="14,0,18,0" />
+      <unit id="4676225400724121285" at="19,0,23,0" name="ErasmusPrograms.constraints.Requirement_Constraints$CONCEPTS" />
+      <unit id="4676225400724121285" at="9,0,24,0" name="ErasmusPrograms.constraints.Requirement_Constraints" />
+    </file>
+  </root>
+  <root nodeRef="r:d62249e9-1888-40f9-9c51-bbbb092b81e0(ErasmusPrograms.constraints)/4676225400724422823">
+    <file name="Step_Constraints.java">
+      <node id="4676225400724422823" at="20,29,21,28" concept="8" />
+      <node id="4676225400724428655" at="25,64,26,65" concept="8" />
+      <node id="4676225400724428655" at="29,109,30,99" concept="4" />
+      <node id="4676225400724428655" at="31,53,32,156" concept="1" />
+      <node id="4676225400724428655" at="33,7,34,20" concept="5" />
+      <node id="4676225400724436690" at="36,85,37,71" concept="5" />
+      <node id="4676225400724593181" at="41,62,42,63" concept="8" />
+      <node id="4676225400724593181" at="45,109,46,99" concept="4" />
+      <node id="4676225400724593181" at="47,53,48,156" concept="1" />
+      <node id="4676225400724593181" at="49,7,50,20" concept="5" />
+      <node id="4676225400724601023" at="52,85,53,71" concept="5" />
+      <node id="4676225400724422823" at="57,84,58,119" concept="4" />
+      <node id="4676225400724428655" at="58,119,59,71" concept="1" />
+      <node id="4676225400724593181" at="59,71,60,67" concept="1" />
+      <node id="4676225400724422823" at="60,67,61,22" concept="5" />
+      <node id="4676225400724422823" at="65,0,66,0" concept="6" trace="Step$nH" />
+      <node id="4676225400724422823" at="69,0,70,0" concept="6" trace="startDate$kRIt" />
+      <node id="4676225400724422823" at="70,0,71,0" concept="6" trace="endDate$kX_Q" />
+      <node id="4676225400724422823" at="20,0,23,0" concept="0" trace="Step_Constraints#()V" />
+      <node id="4676225400724428655" at="25,0,28,0" concept="0" trace="StartDate_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4676225400724428655" at="30,99,33,7" concept="2" />
+      <node id="4676225400724428655" at="36,0,39,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="4676225400724593181" at="41,0,44,0" concept="0" trace="EndDate_Property#(Ljetbrains/mps/smodel/runtime/ConstraintsDescriptor;)V" />
+      <node id="4676225400724593181" at="46,99,49,7" concept="2" />
+      <node id="4676225400724593181" at="52,0,55,0" concept="7" trace="staticValidateProperty#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/String;)Z" />
+      <node id="4676225400724422823" at="56,0,63,0" concept="3" trace="getSpecifiedProperties#()Ljava/util/Map;" />
+      <node id="4676225400724428655" at="28,0,36,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <node id="4676225400724593181" at="44,0,52,0" concept="3" trace="validateValue#(Lorg/jetbrains/mps/openapi/model/SNode;Ljava/lang/Object;Ljetbrains/mps/smodel/runtime/CheckingNodeContext;)Z" />
+      <scope id="4676225400724422823" at="20,29,21,28" />
+      <scope id="4676225400724428655" at="25,64,26,65" />
+      <scope id="4676225400724428655" at="31,53,32,156" />
+      <scope id="4676225400724432903" at="36,85,37,71" />
+      <scope id="4676225400724593181" at="41,62,42,63" />
+      <scope id="4676225400724593181" at="47,53,48,156" />
+      <scope id="4676225400724600085" at="52,85,53,71" />
+      <scope id="4676225400724422823" at="20,0,23,0" />
+      <scope id="4676225400724428655" at="25,0,28,0">
+        <var name="container" id="4676225400724428655" />
+      </scope>
+      <scope id="4676225400724428655" at="36,0,39,0">
+        <var name="node" id="4676225400724428655" />
+        <var name="propertyValue" id="4676225400724428655" />
+      </scope>
+      <scope id="4676225400724593181" at="41,0,44,0">
+        <var name="container" id="4676225400724593181" />
+      </scope>
+      <scope id="4676225400724593181" at="52,0,55,0">
+        <var name="node" id="4676225400724593181" />
+        <var name="propertyValue" id="4676225400724593181" />
+      </scope>
+      <scope id="4676225400724422823" at="57,84,61,22">
+        <var name="properties" id="4676225400724422823" />
+      </scope>
+      <scope id="4676225400724428655" at="29,109,34,20">
+        <var name="result" id="4676225400724428655" />
+      </scope>
+      <scope id="4676225400724593181" at="45,109,50,20">
+        <var name="result" id="4676225400724593181" />
+      </scope>
+      <scope id="4676225400724422823" at="56,0,63,0" />
+      <scope id="4676225400724428655" at="28,0,36,0">
+        <var name="checkingNodeContext" id="4676225400724428655" />
+        <var name="node" id="4676225400724428655" />
+        <var name="propertyValue" id="4676225400724428655" />
+      </scope>
+      <scope id="4676225400724593181" at="44,0,52,0">
+        <var name="checkingNodeContext" id="4676225400724593181" />
+        <var name="node" id="4676225400724593181" />
+        <var name="propertyValue" id="4676225400724593181" />
+      </scope>
+      <unit id="4676225400724422823" at="64,0,67,0" name="ErasmusPrograms.constraints.Step_Constraints$CONCEPTS" />
+      <unit id="4676225400724422823" at="68,0,72,0" name="ErasmusPrograms.constraints.Step_Constraints$PROPS" />
+      <unit id="4676225400724428655" at="24,0,40,0" name="ErasmusPrograms.constraints.Step_Constraints$StartDate_Property" />
+      <unit id="4676225400724593181" at="40,0,56,0" name="ErasmusPrograms.constraints.Step_Constraints$EndDate_Property" />
+      <unit id="4676225400724422823" at="19,0,73,0" name="ErasmusPrograms.constraints.Step_Constraints" />
+    </file>
+  </root>
+</debug-info>
+

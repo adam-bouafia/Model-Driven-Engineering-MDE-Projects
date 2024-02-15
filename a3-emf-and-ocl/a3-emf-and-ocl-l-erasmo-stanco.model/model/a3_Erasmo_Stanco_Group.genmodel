@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/a3-emf-and-ocl-l-erasmo-stanco.model/src-gen"
+    editDirectory="/a3-emf-and-ocl-l-erasmo-stanco.edit/src" modelPluginID="a3-emf-and-ocl-l-erasmo-stanco.model"
+    modelName="A3_Erasmo_Stanco_Group" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="17.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>a3_Erasmo_Stanco_Group.ecore</foreignModel>
+  <genPackages prefix="A3_Erasmo_Stanco_Group" disposableProviderFactory="true" ecorePackage="a3_Erasmo_Stanco_Group.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="a3_Erasmo_Stanco_Group.ecore#//ScholarshipType">
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//ScholarshipType/Program_Country"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//ScholarshipType/Partner_Country"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel">
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel/A1"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel/A2"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel/B1"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel/B2"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel/C1"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//LanguageLevel/C2"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="a3_Erasmo_Stanco_Group.ecore#//PartnerType">
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//PartnerType/Industrial"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//PartnerType/Academic"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="a3_Erasmo_Stanco_Group.ecore#//DegreeLevel">
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//DegreeLevel/Bachelor"/>
+      <genEnumLiterals ecoreEnumLiteral="a3_Erasmo_Stanco_Group.ecore#//DegreeLevel/Master"/>
+    </genEnums>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram/totalCredits"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram/universities"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram/scholarships"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram/associatePartners"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//ErasmusProgram/admissionStructure"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//Scholarship">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Scholarship/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Scholarship/tuitionFee"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Scholarship/travelGrant"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Scholarship/allowance"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//Scholarship/erasmusProgram"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//University">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//University/credits"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//University/universityName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//University/erasmusProgram"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//University/courses"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//University/location"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//Course">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Course/courseCode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Course/courseName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Course/faculty"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Course/courseCredits"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//Course/university"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//Location">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Location/countryName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Location/cityName"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//Location/university"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//AssociatePartner">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//AssociatePartner/partnerName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//AssociatePartner/type"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//AssociatePartner/erasmusProgram"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//AdmissionStructure">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//AdmissionStructure/erasmusProgram"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//AdmissionStructure/applicationProcess"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//AdmissionStructure/requierements"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//AdmissionStructure/results"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//Results">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Results/year"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Results/totalAdmitted"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Results/scholarshipsAwarded"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Results/admittedStudents"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//Results/admissionStructure"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//Requirement">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//Requirement/admissionStructure"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//DocumentRequirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//DocumentRequirement/documentName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//DocumentRequirement/description"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//DegreeRequirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//DegreeRequirement/degreeName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//DegreeRequirement/fieldOfStudy"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//DegreeRequirement/level"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//LanguageRequirement">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//LanguageRequirement/languageName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//LanguageRequirement/level"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//ApplicationProcess">
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//ApplicationProcess/admissionStructure"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//ApplicationProcess/steps"/>
+    </genClasses>
+    <genClasses ecoreClass="a3_Erasmo_Stanco_Group.ecore#//Step">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Step/stepName"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Step/stepDescription"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Step/startDate"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute a3_Erasmo_Stanco_Group.ecore#//Step/endDate"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference a3_Erasmo_Stanco_Group.ecore#//Step/applicationProcess"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

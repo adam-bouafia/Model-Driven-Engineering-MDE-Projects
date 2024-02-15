@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="a3_Erasmo_Stanco_Group" nsURI="http://www.example.org/a3_Erasmo_Stanco_Group"
+    nsPrefix="a3_Erasmo_Stanco_Group">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="ErasmusProgram">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidTotalCredits"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidTotalCredits" value="&#xA;&#x9;&#x9;&#x9;self.totalCredits > 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalCredits" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="universities" upperBound="-1"
+        eType="#//University" containment="true" eOpposite="#//University/erasmusProgram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="scholarships" upperBound="-1"
+        eType="#//Scholarship" containment="true" eOpposite="#//Scholarship/erasmusProgram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="associatePartners" upperBound="-1"
+        eType="#//AssociatePartner" containment="true" eOpposite="#//AssociatePartner/erasmusProgram"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="admissionStructure" eType="#//AdmissionStructure"
+        containment="true" eOpposite="#//AdmissionStructure/erasmusProgram"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Scholarship">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidTuitionFee ValidAllowance ValidTravelGrant"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidTuitionFee" value="&#xA;&#x9;&#x9;&#x9;self.tuitionFee >= 0"/>
+      <details key="ValidAllowance" value="&#xA;&#x9;&#x9;&#x9;self.allowance >= 0"/>
+      <details key="ValidTravelGrant" value="&#xA;&#x9;&#x9;&#x9;self.travelGrant >= 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//ScholarshipType"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="tuitionFee" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="travelGrant" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="allowance" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="erasmusProgram" lowerBound="1"
+        eType="#//ErasmusProgram" eOpposite="#//ErasmusProgram/scholarships"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="University">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidCredits"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidCredits" value="&#xA;&#x9;&#x9;&#x9;self.credits &lt;= 60"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="credits" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="universityName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="erasmusProgram" eType="#//ErasmusProgram"
+        eOpposite="#//ErasmusProgram/universities"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="courses" lowerBound="1"
+        upperBound="-1" eType="#//Course" containment="true" eOpposite="#//Course/university"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="location" lowerBound="1"
+        eType="#//Location" containment="true" eOpposite="#//Location/university"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Course">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidCourseCredits"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidCourseCredits" value="&#xA;&#x9;&#x9;&#x9;self.courseCredits > 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="courseCode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="courseName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="faculty" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="courseCredits" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="university" lowerBound="1"
+        eType="#//University" eOpposite="#//University/courses"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Location">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="countryName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="cityName" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="university" eType="#//University"
+        eOpposite="#//University/location"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AssociatePartner">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="partnerName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" eType="#//PartnerType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="erasmusProgram" eType="#//ErasmusProgram"
+        eOpposite="#//ErasmusProgram/associatePartners"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="AdmissionStructure">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="erasmusProgram" lowerBound="1"
+        eType="#//ErasmusProgram" eOpposite="#//ErasmusProgram/admissionStructure"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="applicationProcess" lowerBound="1"
+        eType="#//ApplicationProcess" containment="true" eOpposite="#//ApplicationProcess/admissionStructure"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="requierements" lowerBound="1"
+        upperBound="-1" eType="#//Requirement" containment="true" eOpposite="#//Requirement/admissionStructure"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="results" upperBound="-1"
+        eType="#//Results" containment="true" eOpposite="#//Results/admissionStructure"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Results">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="ValidYear ValidTotalAdmitted ValidScholarshipsAwarded"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="ValidYear" value="&#xA;&#x9;&#x9;&#x9;self.year > 0"/>
+      <details key="ValidTotalAdmitted" value="&#xA;&#x9;&#x9;&#x9;self.totalAdmitted >= 0"/>
+      <details key="ValidScholarshipsAwarded" value="&#xA;&#x9;&#x9;&#x9;self.scholarshipsAwarded >= 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="year" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="totalAdmitted" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="scholarshipsAwarded" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="admittedStudents" upperBound="-1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="admissionStructure" lowerBound="1"
+        eType="#//AdmissionStructure" eOpposite="#//AdmissionStructure/results"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Requirement">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="admissionStructure" lowerBound="1"
+        eType="#//AdmissionStructure" eOpposite="#//AdmissionStructure/requierements"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DocumentRequirement" eSuperTypes="#//Requirement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="documentName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="DegreeRequirement" eSuperTypes="#//Requirement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="degreeName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fieldOfStudy" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="#//DegreeLevel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="LanguageRequirement" eSuperTypes="#//Requirement">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="languageName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="level" eType="#//LanguageLevel"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ApplicationProcess">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="admissionStructure" lowerBound="1"
+        eType="#//AdmissionStructure" eOpposite="#//AdmissionStructure/applicationProcess"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="steps" lowerBound="1" upperBound="-1"
+        eType="#//Step" containment="true" eOpposite="#//Step/applicationProcess"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Step">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stepName" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="stepDescription" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="startDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="endDate" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="applicationProcess" lowerBound="1"
+        eType="#//ApplicationProcess" eOpposite="#//ApplicationProcess/steps"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="ScholarshipType">
+    <eLiterals name="Program_Country"/>
+    <eLiterals name="Partner_Country"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="LanguageLevel">
+    <eLiterals name="A1"/>
+    <eLiterals name="A2"/>
+    <eLiterals name="B1"/>
+    <eLiterals name="B2"/>
+    <eLiterals name="C1"/>
+    <eLiterals name="C2"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="PartnerType">
+    <eLiterals name="Industrial"/>
+    <eLiterals name="Academic"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="DegreeLevel">
+    <eLiterals name="Bachelor"/>
+    <eLiterals name="Master"/>
+  </eClassifiers>
+</ecore:EPackage>

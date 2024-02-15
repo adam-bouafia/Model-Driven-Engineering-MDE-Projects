@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a3_Erasmo_Stanco_Group:ErasmusProgram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:a3_Erasmo_Stanco_Group="http://www.example.org/a3_Erasmo_Stanco_Group"
+    name="Engineering of Data-Intensive Intelligent Software Systems"
+    totalCredits="120">
+  <universities
+      credits="60"
+      universityName="Åbo Akademi University">
+    <courses
+        courseCode="DS001"
+        courseName="Introduction to Data Science"
+        faculty="Science and Engineering"
+        courseCredits="5"/>
+    <courses
+        courseCode="GPU001"
+        courseName="GPU Programming"
+        faculty="Science and Engineering"
+        courseCredits="5"/>
+    <courses
+        courseCode="ML001"
+        courseName="Machine Learning"
+        faculty="Science and Engineering"
+        courseCredits="5"/>
+    <location
+        countryName="Finland"
+        cityName="Turku"/>
+  </universities>
+  <universities
+      credits="60"
+      universityName="University of L'Aquila">
+    <courses
+        courseCode="MDE001"
+        courseName="Model-Driven Engineering"
+        faculty="Informatics and Mathematics"
+        courseCredits="6"/>
+    <courses
+        courseCode="SA001"
+        courseName="Software Architectures"
+        faculty="Informatics and Mathematics"
+        courseCredits="6"/>
+    <courses
+        courseCode="IT001"
+        courseName="Italian A1"
+        faculty="Human Sciences"/>
+    <location
+        countryName="Italy"
+        cityName="L'Aquila"/>
+  </universities>
+  <scholarships
+      tuitionFee="9000"
+      travelGrant="2000"
+      allowance="24000"/>
+  <scholarships
+      type="Partner_Country"
+      tuitionFee="18000"
+      travelGrant="4000"
+      allowance="24000"/>
+  <associatePartners
+      partnerName="Volvo Construction Equipment AB"/>
+  <admissionStructure>
+    <applicationProcess>
+      <steps
+          stepName="Prepare Application"
+          stepDescription="Collect the required documents"
+          startDate="2023-11-01T00:00:00.000+0100"
+          endDate="2024-01-02T00:00:00.000+0100"/>
+      <steps
+          stepName="Apply Online"
+          stepDescription="Fill in the online form and upload the documents"
+          startDate="2023-11-01T00:00:00.000+0100"
+          endDate="2024-01-02T00:00:00.000+0100"/>
+    </applicationProcess>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:LanguageRequirement"
+        languageName="English"
+        level="B2"/>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:DegreeRequirement"
+        degreeName="Bachelor in Computer Science"
+        fieldOfStudy="Computer Science"/>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:DocumentRequirement"
+        documentName="Transcript of Records"
+        description="Officialy certified transcript of records"/>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:DocumentRequirement"
+        documentName="Certificate of Residence"
+        description="Document that demonstrates the place of residence e.g., driver's license"/>
+    <results
+        year="2023"
+        totalAdmitted="25"
+        scholarshipsAwarded="21">
+      <admittedStudents>Juan Perez, Peru</admittedStudents>
+      <admittedStudents>Sherkan Chavez, Iran</admittedStudents>
+    </results>
+  </admissionStructure>
+</a3_Erasmo_Stanco_Group:ErasmusProgram>

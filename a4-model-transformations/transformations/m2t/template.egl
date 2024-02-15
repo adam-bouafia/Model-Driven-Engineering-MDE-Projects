@@ -1,0 +1,132 @@
+<html>
+	<body>
+		<h1>Erasmus Program: [%= ep.name %]</h1>
+		<p>Total credits: [%= ep.totalCredits %]</p>
+		
+		<h2>Participating universities</h2>
+		[% for (u in ep.universities) { %]
+		<h3>[%= u.universityName %]</h3>
+		<p>Location: [%=u.location.cityName %], [%= u.location.countryName %] <br/>
+		Credits awarded: [%= u.credits %] <br/>
+		Courses offered:</p>
+		<table border="1">
+			<tr><th>Code</th><th>Name</th><th>Faculty</th></tr>
+			[% for (c in u.courses) { %]
+			<tr><td>[%= c.courseCode %]</td><td>[%= c.courseName %]</td><td>[%= c.faculty %]</td></tr>
+			[% } %]
+		</table>
+		[% } %]
+		
+		<h2>Associate partners</h2>
+		<table>
+			<tr>
+			[% if (industrialPartners.size() > 0) { %]
+				<td>Industrial</td>
+			[% } %]
+			[% if (academicPartners.size() > 0) { %]
+				<td>Academic</td>
+			[% } %]
+			</tr>
+			<tr>
+			[% if (industrialPartners.size() > 0) { %]
+				<td>
+					<ul>
+					[% for (ap in industrialPartners) { %]
+						<li>[%= ap.partnerName %]</li>
+					[% } %]
+					</ul>
+				</td>
+			[% } %]
+			[% if (academicPartners.size() > 0) { %]
+				<td>
+					<ul>
+					[% for (ap in academicPartners) { %]
+						<li>[%= ap.partnerName %]</li>
+					[% } %]
+					</ul>
+				</td>
+			[% } %]
+			</tr>
+		</table>
+		
+		<h2>Scholarships available</h2>
+		<table border="1">
+			<tr><th>Type</th><th>Tuition fee</th><th>Travel grant</th><th>Allowance</th></tr>
+		[% for (s in ep.scholarships) { %]
+			<tr><td>[%= s.type.scholarshipTypeToString() %]</td><td>[%= s.tuitionFee %] €</td><td>[%= s.travelGrant %] €</td><td>[%= s.allowance %] €</td></tr>
+		[% } %]
+		</table>
+		
+		<h2>Requirements</h2>
+		
+		<h3>Required documents</h3>
+		<ul>
+		[% for (d in documentReqs) { %]
+			<li><strong>[%= d.documentName %]</strong>: [%= d.description %]</li>
+		[% } %]
+		</ul>
+		
+		<h3>Language requirements</h3>
+		<ul>
+		[% for (l in languageReqs) { %]
+			<li>[%= l.languageName %] ([%= l.level %])</li>
+		[% } %]
+		</ul>
+		
+		<h3>Accepted degrees</h3>
+		<table border="1">
+			<tr><th>Name</th><th>Level</th><th>Field of study</th></tr>
+		[% for (d in degreeReqs) { %]
+			<tr><td>[%= d.degreeName %]</td><td>[%= d.level %]</td><td>[%= d.fieldOfStudy %]</td></tr>
+		[% } %]
+		</table>
+		
+		<h2>Application process</h2>
+		<ol>
+		[% for (step in ep.admissionStructure.applicationProcess.steps) { %]
+			<li>[%= step.stepName %]<br/>
+			Dates: [%= step.startDate %] - [%= step.endDate %]
+			<p>[%= step.stepDescription %]</p>
+			</li>		
+		[% } %]
+		</ol>
+		
+		<h2>Results of past admission processes</h2>
+		[% for (result in ep.admissionStructure.results) { %]
+		<h3>Year: [%= result.year %]</h3>
+		<p>
+			Total admitted students: [%= result.totalAdmitted %]<br/>
+			Scholarships awarded: [%= result.scholarshipsAwarded %]<br/>
+			Admitted students:
+		</p>
+		<table border="1">
+			<tr><th>Name</th><th>Country</th></tr>
+			[% for (s in result.admittedStudents) {
+				var admittedStudentInfo = s.split(","); %]
+			<tr>
+				<td>
+				[% if (admittedStudentInfo.size() > 0) { %]
+				[%= admittedStudentInfo.first() %]
+				[% } %]
+				</td>
+				<td>
+				[% if (admittedStudentInfo.size() > 1) { %]
+				[%= admittedStudentInfo.second() %]
+				[% } %]
+				</td>
+			</tr>
+			[% } %]
+		</table>
+		[% } %]
+	</body>
+</html>
+[%
+operation Any scholarshipTypeToString(): String {
+	switch (self) {
+		case ErasmusPrograms!ScholarshipType#Program_Country:
+			return "Program Country";
+		case ErasmusPrograms!ScholarshipType#Partner_Country:
+			return "Partner Country";
+	}
+}
+%]

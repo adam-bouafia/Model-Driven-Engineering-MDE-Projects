@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.category"
+            name="Erasmus Category">
+      </category>
+      <command
+            categoryId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.category"
+            id="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.createCommand"
+            name="Create">
+      </command>
+      <command 
+      		categoryId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.category"
+            id="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.loadCommand"
+            name="Load">
+      </command>
+      <command
+      		categoryId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.category"
+            id="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.serializeCommand"
+            name="Serialize">
+      </command>
+      <command
+      		categoryId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.category"
+            id="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.validateCommand"
+            name="Validate">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="a3_Erasmo_Stanco_Group.ui.handlers.CreateCommandHandler"
+            commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.createCommand">
+      </handler>
+      <handler
+      		class="a3_Erasmo_Stanco_Group.ui.handlers.LoadCommandHandler"
+            commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.loadCommand">
+      </handler>
+      <handler
+      		class="a3_Erasmo_Stanco_Group.ui.handlers.SerializeCommandHandler"
+            commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.serializeCommand">
+      </handler>
+      <handler
+      		class="a3_Erasmo_Stanco_Group.ui.handlers.ValidateCommandHandler"
+            commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.validateCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.createCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="a3-emf-and-ocl-l-erasmo-stanco.ui.menus.sampleMenu"
+               label="Erasmus Programs"
+               mnemonic="P">
+            <command
+                  commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.createCommand"
+                  id="a3-emf-and-ocl-l-erasmo-stanco.ui.menus.createCommand"
+                  mnemonic="C">
+            </command>
+            <command id="a3-emf-and-ocl-l-erasmo-stanco.ui.menus.loadCommand"
+                  commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.loadCommand"
+                  mnemonic="L">
+            </command>
+            <command id="a3-emf-and-ocl-l-erasmo-stanco.ui.menus.serializeCommand"
+                  commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.serializeCommand"
+                  mnemonic="S">
+            </command>
+            <command id="a3-emf-and-ocl-l-erasmo-stanco.ui.menus.validateCommand"
+                  commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.validateCommand"
+                  mnemonic="V">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="a3-emf-and-ocl-l-erasmo-stanco.ui.toolbars.erasmusProgramsToolbar">
+            <command
+                  commandId="a3-emf-and-ocl-l-erasmo-stanco.ui.commands.createCommand"
+                  icon="icons/sample.png"
+                  id="a3-emf-and-ocl-l-erasmo-stanco.ui.toolbars.createCommand"
+                  tooltip="Create model">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<a3_Erasmo_Stanco_Group:ErasmusProgram
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:a3_Erasmo_Stanco_Group="http://www.example.org/a3_Erasmo_Stanco_Group"
+    name="Software Engineers for Green Deal"
+    totalCredits="120">
+  <universities
+      credits="30"
+      universityName="University of L'Aquila">
+    <courses
+        courseCode="MDE001"
+        courseName="Model-Driven Engineering"
+        faculty="Informatics and Mathematics"
+        courseCredits="6"/>
+    <courses
+        courseCode="IT001"
+        courseName="Italian for Foreigners"
+        faculty="Human Sciences"
+        courseCredits="6"/>
+    <location
+        countryName="Italy"
+        cityName="L'Aquila"/>
+  </universities>
+  <universities
+      credits="30"
+      universityName="Lappeenranta-Lahti University of Technology">
+    <courses
+        courseCode="SE001"
+        courseName="Sustainability and IT"
+        faculty="Software Engineering"
+        courseCredits="6"/>
+    <courses
+        courseCode="SE003"
+        courseName="SE4GD Summer School"
+        faculty="Software Engineering"
+        courseCredits="3"/>
+    <location
+        countryName="Finland"
+        cityName="Lappeenranta"/>
+  </universities>
+  <universities
+      credits="30"
+      universityName="Vrije Universiteit Amsterdam">
+    <courses
+        courseCode="CS002"
+        courseName="Green Lab"
+        faculty="Computer Science"
+        courseCredits="6"/>
+    <courses
+        courseCode="CS001"
+        courseName="Service oriented design"
+        faculty="Computer Science"
+        courseCredits="6"/>
+    <location
+        countryName="Netherlands"
+        cityName="Amsterdam"/>
+  </universities>
+  <associatePartners
+      partnerName="Aalborg University"
+      type="Academic"/>
+  <admissionStructure>
+    <applicationProcess>
+      <steps
+          stepName="Prepare Application"
+          stepDescription="Collect for the required documents"
+          startDate="2023-12-01T00:00:00.000+0100"
+          endDate="2024-01-17T00:00:00.000+0100"/>
+      <steps
+          stepName="Online application"
+          stepDescription="Fill in and submit the online application"
+          startDate="2023-12-01T00:00:00.000+0100"
+          endDate="2024-01-17T00:00:00.000+0100"/>
+    </applicationProcess>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:DocumentRequirement"
+        documentName="Transcript of Records"
+        description="A list of grades"/>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:DocumentRequirement"
+        documentName="Passport"
+        description="Passport that contains your personal data"/>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:LanguageRequirement"
+        languageName="English"
+        level="B2"/>
+    <requierements
+        xsi:type="a3_Erasmo_Stanco_Group:DegreeRequirement"
+        degreeName="Bachelor in Computer Science"
+        fieldOfStudy="Computer Science"/>
+    <results
+        year="2023"
+        totalAdmitted="27"
+        scholarshipsAwarded="25">
+      <admittedStudents>Alex Torres, Colombia</admittedStudents>
+      <admittedStudents>Carlos Franco, Mexico</admittedStudents>
+    </results>
+  </admissionStructure>
+</a3_Erasmo_Stanco_Group:ErasmusProgram>

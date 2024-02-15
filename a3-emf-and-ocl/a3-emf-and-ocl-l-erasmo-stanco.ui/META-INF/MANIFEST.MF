@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Erasmus Programs
+Bundle-SymbolicName: a3-emf-and-ocl-l-erasmo-stanco.ui;singleton:=true
+Bundle-Version: 1.0.0
+Import-Package: a3_Erasmo_Stanco_Group
+Require-Bundle: org.eclipse.ui,
+ a3-emf-and-ocl-l-erasmo-stanco.serializer;bundle-version="1.0.0",
+ org.eclipse.core.runtime;bundle-version="3.30.0",
+ org.eclipse.emf.common
+Automatic-Module-Name: a3.emf.and.ocl.l.erasmo.stanco.ui
+Bundle-RequiredExecutionEnvironment: JavaSE-17

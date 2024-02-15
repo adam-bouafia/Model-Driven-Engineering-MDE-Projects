@@ -1,0 +1,183 @@
+operation Any transformScholarshipType() {
+	switch (self) {
+		case ErasmusPrograms!ScholarshipType#Program_Country:
+			return ErasmusPrograms_v2!ScholarshipType#Program_Country;
+		case ErasmusPrograms!ScholarshipType#Partner_Country:
+			return ErasmusPrograms_v2!ScholarshipType#Partner_Country;
+	}
+}
+
+operation Any transformLanguageLevel() {
+	switch (self) {
+		case ErasmusPrograms!LanguageLevel#A1:
+			return ErasmusPrograms_v2!LanguageLevel#A1;
+		case ErasmusPrograms!LanguageLevel#A2:
+			return ErasmusPrograms_v2!LanguageLevel#A2;
+		case ErasmusPrograms!LanguageLevel#B1:
+			return ErasmusPrograms_v2!LanguageLevel#B1;
+		case ErasmusPrograms!LanguageLevel#B2:
+			return ErasmusPrograms_v2!LanguageLevel#B2;
+		case ErasmusPrograms!LanguageLevel#C1:
+			return ErasmusPrograms_v2!LanguageLevel#C1;
+		case ErasmusPrograms!LanguageLevel#C2:
+			return ErasmusPrograms_v2!LanguageLevel#C2;
+	}
+}
+
+operation Any transformPartnerType()  {
+	switch (self) {
+		case ErasmusPrograms!PartnerType#Industrial:
+			return ErasmusPrograms_v2!PartnerType#Industrial;
+		case ErasmusPrograms!PartnerType#Academic:
+			return ErasmusPrograms_v2!PartnerType#Academic;
+	}
+}
+
+operation Any transformDegreeLevel() {
+	switch(self) {
+		case ErasmusPrograms!DegreeLevel#Bachelor:
+			return ErasmusPrograms_v2!DegreeLevel#Bachelor;
+		case ErasmusPrograms!DegreeLevel#Master:
+			return ErasmusPrograms_v2!DegreeLevel#Master;
+	}
+}
+
+// special rules
+// ErasmusProgram: add duration attribute
+rule ErasmusProgram 
+	transform s : ErasmusPrograms!ErasmusProgram
+	to t : ErasmusPrograms_v2!ErasmusProgram {
+	
+	t.name = s.name;
+	t.totalCredits = s.totalCredits;
+	t.universities ::= s.universities;
+	t.scholarships ::= s.scholarships;
+	t.associatePartners ::= s.associatePartners;
+	t.admissionStructure ::= s.admissionStructure;
+	t.duration = 24; // default value
+}
+
+// Scholarship: rename allowance to monthlyAllowance
+rule Scholarship 
+	transform s : ErasmusPrograms!Scholarship
+	to t : ErasmusPrograms_v2!Scholarship {
+	
+	t.type = s.type.transformScholarshipType();
+	t.tuitionFee = s.tuitionFee;
+	t.travelGrant = s.travelGrant;
+	t.monthlyAllowance = s.allowance / 24;
+}
+
+// Results: rename to AdmissionResults, replace admittedStudents with a reference to
+// a list of (new concept) AdmittedStudentInfo
+operation studentInfoFromString (s: String) : ErasmusPrograms_v2!AdmittedStudentInfo {
+	var studentInfo = s.split(",");
+	var newStudentInfo = new ErasmusPrograms_v2!AdmittedStudentInfo;
+	if (studentInfo.size() > 0) {
+		newStudentInfo.name = studentInfo.first();
+	}
+	if (studentInfo.size() > 1) {
+		newStudentInfo.country = studentInfo.second();
+	}
+	return newStudentInfo;
+}
+
+rule Results2AdmissionResults 
+	transform s : ErasmusPrograms!Results
+	to t : ErasmusPrograms_v2!AdmissionResults {
+	
+	t.year = s.year;
+	t.totalAdmitted = s.totalAdmitted;
+	t.scholarshipsAwarded = s.scholarshipsAwarded;
+	
+	t.admittedStudents = s.admittedStudents.collect(a | studentInfoFromString(a));
+}
+
+// straightforward rules
+
+rule Location
+	transform s: ErasmusPrograms!Location
+	to t: ErasmusPrograms_v2!Location {
+	
+	t.countryName = s.countryName;
+	t.cityName = s.cityName;
+}
+
+rule Course 
+	transform s : ErasmusPrograms!Course
+	to t : ErasmusPrograms_v2!Course {
+	
+	t.courseCode = s.courseCode;
+	t.courseName = s.courseName;
+	t.faculty = s.faculty;
+	t.courseCredits = s.courseCredits;
+}
+
+rule University 
+	transform s : ErasmusPrograms!University
+	to t : ErasmusPrograms_v2!University {
+	
+	t.universityName = s.universityName;
+	t.credits = s.credits;
+	t.courses ::= s.courses;
+	t.location ::= s.location;
+}
+
+rule AssociatePartner 
+	transform s : ErasmusPrograms!AssociatePartner
+	to t : ErasmusPrograms_v2!AssociatePartner {
+	
+	t.partnerName = s.partnerName;
+	t.type = s.type.transformPartnerType();
+}
+
+rule Step 
+	transform s : ErasmusPrograms!Step
+	to t : ErasmusPrograms_v2!Step {
+	
+	t.stepName = s.stepName;
+	t.stepDescription = s.stepDescription;
+	t.startDate = s.startDate;
+	t.endDate = s.endDate;
+}
+
+rule ApplicationProcess 
+	transform s : ErasmusPrograms!ApplicationProcess
+	to t : ErasmusPrograms_v2!ApplicationProcess {
+	
+	t.steps ::= s.steps;
+}
+
+rule DocumentRequirement 
+	transform s : ErasmusPrograms!DocumentRequirement
+	to t : ErasmusPrograms_v2!DocumentRequirement {
+	
+	t.documentName = s.documentName;
+	t.description = s.description;
+}
+
+rule DegreeRequirement 
+	transform s : ErasmusPrograms!DegreeRequirement
+	to t : ErasmusPrograms_v2!DegreeRequirement {
+	
+	t.degreeName = s.degreeName;
+	t.fieldOfStudy = s.fieldOfStudy;
+	t.level = s.level.transformDegreeLevel();
+}
+
+rule LanguageRequirement 
+	transform s : ErasmusPrograms!LanguageRequirement
+	to t : ErasmusPrograms_v2!LanguageRequirement {
+	
+	t.languageName = s.languageName;
+	t.level = s.level.transformLanguageLevel();
+}
+
+rule AdmissionStructure 
+	transform s : ErasmusPrograms!AdmissionStructure
+	to t : ErasmusPrograms_v2!AdmissionStructure {
+	
+	t.applicationProcess ::= s.applicationProcess;
+	t.requirements ::= s.requierements;
+	t.results ::= s.results;
+}

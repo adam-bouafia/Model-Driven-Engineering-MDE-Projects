@@ -1,0 +1,112 @@
+grammar org.xtext.mde.a5.ErasmusPrograms with org.eclipse.xtext.common.Terminals
+
+import "http://www.example.org/a3_Erasmo_Stanco_Group" 
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+//generate erasmusPrograms "http://www.xtext.org/mde/a5/ErasmusPrograms"
+
+ErasmusProgram returns ErasmusProgram:
+  'ErasmusProgram' name=STRING '{'
+    'totalCredits' totalCredits=INT
+    ('universities' '{' universities+=University (',' universities+=University)* '}' )?
+    ('scholarships' '{' scholarships+=Scholarship (',' scholarships+=Scholarship)* '}' )?
+    ('associatePartners' '{' associatePartners+=AssociatePartner (',' associatePartners+=AssociatePartner)* '}' )?
+    'admissionStructure' admissionStructure=AdmissionStructure
+  '}';
+
+Scholarship returns Scholarship:
+  type=ScholarshipType '{'
+    'tuitionFee' tuitionFee=INT
+    'travelGrant' travelGrant=INT
+    'allowance' allowance=INT
+  '}';
+
+University returns University:
+  'University' universityName=STRING '{'
+    'location' location=Location
+    'credits' credits=INT
+    ('courses' '{' courses+=Course (',' courses+=Course)* '}' )?
+  '}';
+
+Course returns Course:
+  '{'
+    'code' ':' courseCode=STRING
+    'name' ':' courseName=STRING
+    'faculty' ':' faculty=STRING
+    'credits' ':' courseCredits=INT
+  '}';
+
+Location returns Location:
+  '{'
+    'country' ':' countryName=STRING
+    'city' ':' cityName=STRING
+  '}';
+
+AssociatePartner returns AssociatePartner:
+    partnerName=STRING '(' type=PartnerType ')';
+
+AdmissionStructure returns AdmissionStructure:
+  '{'
+    'applicationProcess' applicationProcess=ApplicationProcess
+    ('requirements' '{' requierements+=Requirement (',' requierements+=Requirement)* '}' )?
+    ('results' '{' results+=Results (',' results+=Results)* '}' )?
+  '}';
+
+Results returns Results:
+  'Year' year=INT '{'
+    'totalAdmitted' totalAdmitted=INT
+    'scholarshipsAwarded' scholarshipsAwarded=INT
+    ('admittedStudents' '{' admittedStudents+=STRING (',' admittedStudents+=STRING)* '}' )?
+  '}';
+
+Requirement returns Requirement:
+  DocumentRequirement | DegreeRequirement | LanguageRequirement;
+
+DocumentRequirement returns DocumentRequirement:
+  'DocumentRequirement' '{'
+    'documentName' documentName=STRING
+    'description' description=STRING
+  '}';
+
+DegreeRequirement returns DegreeRequirement:
+  'DegreeRequirement' '{'
+    'degreeName' degreeName=STRING
+    'fieldOfStudy' fieldOfStudy=STRING
+    'level' level=DegreeLevel
+  '}';
+
+LanguageRequirement returns LanguageRequirement:
+  'LanguageRequirement' '{'
+    'language' languageName=STRING
+    'level' level=LanguageLevel
+  '}';
+
+ApplicationProcess returns ApplicationProcess:
+  {ApplicationProcess} '{'
+    ('steps' '{' steps+=Step (',' steps+=Step)* '}' )?
+  '}';
+
+Step returns Step:
+  'Step' stepName=STRING '{'
+    'description' stepDescription=STRING
+    'startDate' startDate=EDATE
+    'endDate' endDate=EDATE
+  '}';
+
+// Define EDATE as a data type
+// rule copied from https://www.eclipse.org/forums/index.php?t=msg&th=1071390&goto=1712637&#msg_1712637
+terminal EDATE returns ecore::EDate: 
+  '0'..'9''0'..'9''0'..'9''0'..'9' '-' '0'..'9''0'..'9' '-' '0'..'9''0'..'9'; 
+  
+// Enums
+enum ScholarshipType returns ScholarshipType:
+  Program_Country | Partner_Country;
+
+enum LanguageLevel returns LanguageLevel:
+  A1 | A2 | B1 | B2 | C1 | C2;
+
+enum PartnerType returns PartnerType:
+  Industrial | Academic;
+
+enum DegreeLevel returns DegreeLevel:
+  Bachelor | Master;

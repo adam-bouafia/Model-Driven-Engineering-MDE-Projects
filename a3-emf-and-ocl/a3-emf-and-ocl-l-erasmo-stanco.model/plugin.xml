@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated a3_Erasmo_Stanco_Group -->
+      <package
+            uri="http://www.example.org/a3_Erasmo_Stanco_Group"
+            class="a3_Erasmo_Stanco_Group.A3_Erasmo_Stanco_GroupPackage"
+            genModel="model/a3_Erasmo_Stanco_Group.genmodel"/>
+   </extension>
+
+</plugin>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated a3_Erasmo_Stanco_Group -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="a3_Erasmo_Stanco_Group.presentation.A3_Erasmo_Stanco_GroupModelWizardID"
+            name="%_UI_A3_Erasmo_Stanco_GroupModelWizard_label"
+            class="a3_Erasmo_Stanco_Group.presentation.A3_Erasmo_Stanco_GroupModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/A3_Erasmo_Stanco_GroupModelFile.gif">
+         <description>%_UI_A3_Erasmo_Stanco_GroupModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated a3_Erasmo_Stanco_Group -->
+      <editor
+            id="a3_Erasmo_Stanco_Group.presentation.A3_Erasmo_Stanco_GroupEditorID"
+            name="%_UI_A3_Erasmo_Stanco_GroupEditor_label"
+            icon="icons/full/obj16/A3_Erasmo_Stanco_GroupModelFile.gif"
+            extensions="a3_erasmo_stanco_group"
+            class="a3_Erasmo_Stanco_Group.presentation.A3_Erasmo_Stanco_GroupEditor"
+            contributorClass="a3_Erasmo_Stanco_Group.presentation.A3_Erasmo_Stanco_GroupActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

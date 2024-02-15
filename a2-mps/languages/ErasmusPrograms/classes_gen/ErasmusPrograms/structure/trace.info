@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123155:jetbrains.mps.baseLanguage.structure.ExpressionStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068390468200:jetbrains.mps.baseLanguage.structure.FieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159:jetbrains.mps.baseLanguage.structure.IfStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242864:jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/6329021646629104954:jetbrains.mps.baseLanguage.structure.SingleLineComment" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1081236700938:jetbrains.mps.baseLanguage.structure.StaticMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1163670490218:jetbrains.mps.baseLanguage.structure.SwitchStatement" />
+  <root>
+    <file name="ConceptPresentationAspectImpl.java">
+      <unit at="11,0,133,0" name="ErasmusPrograms.structure.ConceptPresentationAspectImpl" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <unit at="10,0,54,0" name="ErasmusPrograms.structure.LanguageConceptSwitch" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <unit at="18,0,260,0" name="ErasmusPrograms.structure.StructureAspectDescriptor" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148160">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148160" at="23,0,24,0" concept="2" trace="props_Scholarship" />
+      <node id="2749287990149148160" at="109,40,110,76" concept="5" />
+      <node id="2749287990149148160" at="110,76,111,35" concept="1" />
+      <node id="2749287990149148160" at="111,35,112,43" concept="1" />
+      <node id="2749287990149148160" at="113,9,114,33" concept="6" />
+      <node id="2749287990149148160" at="108,45,113,9" concept="3" />
+      <scope id="2749287990149148160" at="109,40,112,43">
+        <var name="cpb" id="2749287990149148160" />
+      </scope>
+      <scope id="2749287990149148160" at="108,45,114,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148160" at="23,0,24,0" concept="8" trace="Scholarship" />
+      <node id="2749287990149148160" at="39,46,40,50" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148160" at="30,0,31,0" concept="2" trace="myConceptScholarship" />
+      <node id="2749287990149148160" at="80,45,81,36" concept="6" />
+      <node id="2749287990149148160" at="222,69,223,161" concept="5" />
+      <node id="2749287990149148160" at="223,161,224,34" concept="1" />
+      <node id="2749287990149148160" at="224,34,225,71" concept="1" />
+      <node id="2749287990149148160" at="225,71,226,102" concept="1" />
+      <node id="2749287990149148160" at="226,102,227,17" concept="1" />
+      <node id="2749287990149148162" at="227,17,228,175" concept="1" />
+      <node id="2749287990149148191" at="228,175,229,117" concept="1" />
+      <node id="2749287990149148196" at="229,117,230,118" concept="1" />
+      <node id="2749287990149148200" at="230,118,231,116" concept="1" />
+      <node id="2749287990149148160" at="231,116,232,27" concept="1" />
+      <node id="2749287990149148160" at="232,27,233,22" concept="6" />
+      <node id="2749287990149148160" at="222,0,235,0" concept="9" trace="createDescriptorForScholarship#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148160" at="80,45,81,36" />
+      <scope id="2749287990149148160" at="222,69,233,22">
+        <var name="b" id="2749287990149148160" />
+      </scope>
+      <scope id="2749287990149148160" at="222,0,235,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148184">
+    <file name="EnumerationDescriptor_ScholarshipType.java">
+      <node id="2749287990149148184" at="14,50,15,181" concept="10" />
+      <node id="2749287990149148185" at="18,0,19,0" concept="2" trace="myMember_PROGRAMCOUNTRY_0" />
+      <node id="2749287990149148187" at="19,0,20,0" concept="2" trace="myMember_PARTNERCOUNTRY_0" />
+      <node id="2749287990149148184" at="21,0,22,0" concept="2" trace="myIndex" />
+      <node id="2749287990149148184" at="22,0,23,0" concept="2" trace="myMembers" />
+      <node id="2749287990149148184" at="26,62,27,16" concept="6" />
+      <node id="2749287990149148184" at="32,68,33,21" concept="6" />
+      <node id="2749287990149148184" at="39,29,40,18" concept="6" />
+      <node id="2749287990149148185" at="43,28,44,41" concept="6" />
+      <node id="2749287990149148187" at="45,28,46,41" concept="6" />
+      <node id="2749287990149148184" at="47,5,48,16" concept="6" />
+      <node id="2749287990149148184" at="53,73,54,39" concept="5" />
+      <node id="2749287990149148184" at="55,22,56,18" concept="6" />
+      <node id="2749287990149148184" at="57,5,58,32" concept="6" />
+      <node id="2749287990149148184" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_ScholarshipType#()V" />
+      <node id="2749287990149148184" at="38,88,41,5" concept="3" />
+      <node id="2749287990149148184" at="54,39,57,5" concept="3" />
+      <node id="2749287990149148184" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149148184" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="2749287990149148184" at="41,5,47,5" concept="11" />
+      <node id="2749287990149148184" at="51,0,60,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149148184" at="36,0,50,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="2749287990149148184" at="14,50,15,181" />
+      <scope id="2749287990149148184" at="26,62,27,16" />
+      <scope id="2749287990149148184" at="32,68,33,21" />
+      <scope id="2749287990149148184" at="39,29,40,18" />
+      <scope id="2749287990149148185" at="43,28,44,41" />
+      <scope id="2749287990149148187" at="45,28,46,41" />
+      <scope id="2749287990149148184" at="55,22,56,18" />
+      <scope id="2749287990149148184" at="14,0,17,0" />
+      <scope id="2749287990149148184" at="24,0,29,0" />
+      <scope id="2749287990149148184" at="30,0,35,0" />
+      <scope id="2749287990149148184" at="53,73,58,32">
+        <var name="index" id="2749287990149148184" />
+      </scope>
+      <scope id="2749287990149148184" at="51,0,60,0">
+        <var name="idValue" id="2749287990149148184" />
+      </scope>
+      <scope id="2749287990149148184" at="38,88,48,16" />
+      <scope id="2749287990149148184" at="36,0,50,0">
+        <var name="memberName" id="2749287990149148184" />
+      </scope>
+      <unit id="2749287990149148184" at="12,0,61,0" name="ErasmusPrograms.structure.EnumerationDescriptor_ScholarshipType" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148184" at="36,0,37,0" concept="2" trace="myEnumerationScholarshipType" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148206">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148206" at="25,0,26,0" concept="2" trace="props_University" />
+      <node id="2749287990149148206" at="123,39,124,76" concept="5" />
+      <node id="2749287990149148206" at="124,76,125,35" concept="1" />
+      <node id="2749287990149148206" at="125,35,126,42" concept="1" />
+      <node id="2749287990149148206" at="127,9,128,32" concept="6" />
+      <node id="2749287990149148206" at="122,44,127,9" concept="3" />
+      <scope id="2749287990149148206" at="123,39,126,42">
+        <var name="cpb" id="2749287990149148206" />
+      </scope>
+      <scope id="2749287990149148206" at="122,44,128,32" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148206" at="25,0,26,0" concept="8" trace="University" />
+      <node id="2749287990149148206" at="41,43,42,49" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148206" at="32,0,33,0" concept="2" trace="myConceptUniversity" />
+      <node id="2749287990149148206" at="84,44,85,35" concept="6" />
+      <node id="2749287990149148206" at="247,68,248,160" concept="5" />
+      <node id="2749287990149148206" at="248,160,249,34" concept="1" />
+      <node id="2749287990149148206" at="249,34,250,71" concept="1" />
+      <node id="2749287990149148206" at="250,71,251,102" concept="1" />
+      <node id="2749287990149148206" at="251,102,252,17" concept="1" />
+      <node id="2749287990149148209" at="252,17,253,114" concept="1" />
+      <node id="2749287990149158437" at="253,114,254,200" concept="1" />
+      <node id="8411917052159161519" at="254,200,255,202" concept="1" />
+      <node id="2749287990149148206" at="255,202,256,26" concept="1" />
+      <node id="2749287990149148206" at="256,26,257,22" concept="6" />
+      <node id="2749287990149148206" at="247,0,259,0" concept="9" trace="createDescriptorForUniversity#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148206" at="84,44,85,35" />
+      <scope id="2749287990149148206" at="247,68,257,22">
+        <var name="b" id="2749287990149148206" />
+      </scope>
+      <scope id="2749287990149148206" at="247,0,259,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148213">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148213" at="15,0,16,0" concept="2" trace="props_Course" />
+      <node id="2749287990149148213" at="54,35,55,76" concept="5" />
+      <node id="2749287990149148213" at="55,76,56,35" concept="1" />
+      <node id="2749287990149148213" at="56,35,57,38" concept="1" />
+      <node id="2749287990149148213" at="58,9,59,28" concept="6" />
+      <node id="2749287990149148213" at="53,40,58,9" concept="3" />
+      <scope id="2749287990149148213" at="54,35,57,38">
+        <var name="cpb" id="2749287990149148213" />
+      </scope>
+      <scope id="2749287990149148213" at="53,40,59,28" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148213" at="15,0,16,0" concept="8" trace="Course" />
+      <node id="2749287990149148213" at="31,55,32,45" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148213" at="22,0,23,0" concept="2" trace="myConceptCourse" />
+      <node id="2749287990149148213" at="64,40,65,31" concept="6" />
+      <node id="2749287990149148213" at="130,64,131,156" concept="5" />
+      <node id="2749287990149148213" at="131,156,132,34" concept="1" />
+      <node id="2749287990149148213" at="132,34,133,71" concept="1" />
+      <node id="2749287990149148213" at="133,71,134,102" concept="1" />
+      <node id="2749287990149148213" at="134,102,135,17" concept="1" />
+      <node id="2749287990149148214" at="135,17,136,116" concept="1" />
+      <node id="2749287990149148219" at="136,116,137,114" concept="1" />
+      <node id="2749287990149148223" at="137,114,138,113" concept="1" />
+      <node id="2749287990149148213" at="138,113,139,22" concept="1" />
+      <node id="2749287990149148213" at="139,22,140,22" concept="6" />
+      <node id="2749287990149148213" at="130,0,142,0" concept="9" trace="createDescriptorForCourse#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148213" at="64,40,65,31" />
+      <scope id="2749287990149148213" at="130,64,140,22">
+        <var name="b" id="2749287990149148213" />
+      </scope>
+      <scope id="2749287990149148213" at="130,0,142,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148229">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148229" at="20,0,21,0" concept="2" trace="props_Location" />
+      <node id="2749287990149148229" at="89,37,90,76" concept="5" />
+      <node id="2749287990149148229" at="90,76,91,42" concept="1" />
+      <node id="2749287990149148229" at="91,42,92,40" concept="1" />
+      <node id="2749287990149148229" at="93,9,94,30" concept="6" />
+      <node id="2749287990149148229" at="88,42,93,9" concept="3" />
+      <scope id="2749287990149148229" at="89,37,92,40">
+        <var name="cpb" id="2749287990149148229" />
+      </scope>
+      <scope id="2749287990149148229" at="88,42,94,30" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148229" at="20,0,21,0" concept="8" trace="Location" />
+      <node id="2749287990149148229" at="36,58,37,47" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148229" at="27,0,28,0" concept="2" trace="myConceptLocation" />
+      <node id="2749287990149148229" at="74,42,75,33" concept="6" />
+      <node id="2749287990149148229" at="191,66,192,158" concept="5" />
+      <node id="2749287990149148229" at="192,158,193,34" concept="1" />
+      <node id="2749287990149148229" at="193,34,194,102" concept="1" />
+      <node id="2749287990149148229" at="194,102,195,17" concept="1" />
+      <node id="2749287990149148230" at="195,17,196,117" concept="1" />
+      <node id="2749287990149148232" at="196,117,197,114" concept="1" />
+      <node id="2749287990149148229" at="197,114,198,24" concept="1" />
+      <node id="2749287990149148229" at="198,24,199,22" concept="6" />
+      <node id="2749287990149148229" at="191,0,201,0" concept="9" trace="createDescriptorForLocation#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148229" at="74,42,75,33" />
+      <scope id="2749287990149148229" at="191,66,199,22">
+        <var name="b" id="2749287990149148229" />
+      </scope>
+      <scope id="2749287990149148229" at="191,0,201,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148235">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148235" at="14,0,15,0" concept="2" trace="props_AssociatePartner" />
+      <node id="2749287990149148235" at="47,45,48,76" concept="5" />
+      <node id="2749287990149148235" at="48,76,49,41" concept="1" />
+      <node id="2749287990149148235" at="49,41,50,48" concept="1" />
+      <node id="2749287990149148235" at="51,9,52,38" concept="6" />
+      <node id="2749287990149148235" at="46,50,51,9" concept="3" />
+      <scope id="2749287990149148235" at="47,45,50,48">
+        <var name="cpb" id="2749287990149148235" />
+      </scope>
+      <scope id="2749287990149148235" at="46,50,52,38" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148235" at="14,0,15,0" concept="8" trace="AssociatePartner" />
+      <node id="2749287990149148235" at="30,57,31,55" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148235" at="21,0,22,0" concept="2" trace="myConceptAssociatePartner" />
+      <node id="2749287990149148235" at="62,50,63,41" concept="6" />
+      <node id="2749287990149148235" at="120,74,121,166" concept="5" />
+      <node id="2749287990149148235" at="121,166,122,34" concept="1" />
+      <node id="2749287990149148235" at="122,34,123,102" concept="1" />
+      <node id="2749287990149148235" at="123,102,124,17" concept="1" />
+      <node id="2749287990149148236" at="124,17,125,110" concept="1" />
+      <node id="2749287990149148244" at="125,110,126,175" concept="1" />
+      <node id="2749287990149148235" at="126,175,127,23" concept="1" />
+      <node id="2749287990149148235" at="127,23,128,22" concept="6" />
+      <node id="2749287990149148235" at="120,0,130,0" concept="9" trace="createDescriptorForAssociatePartner#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148235" at="62,50,63,41" />
+      <scope id="2749287990149148235" at="120,74,128,22">
+        <var name="b" id="2749287990149148235" />
+      </scope>
+      <scope id="2749287990149148235" at="120,0,130,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148238">
+    <file name="EnumerationDescriptor_PartnerType.java">
+      <node id="2749287990149148238" at="14,46,15,177" concept="10" />
+      <node id="2749287990149148239" at="18,0,19,0" concept="2" trace="myMember_INDUSTRIAL_0" />
+      <node id="2749287990149148240" at="19,0,20,0" concept="2" trace="myMember_ACADEMIC_0" />
+      <node id="2749287990149148238" at="21,0,22,0" concept="2" trace="myIndex" />
+      <node id="2749287990149148238" at="22,0,23,0" concept="2" trace="myMembers" />
+      <node id="2749287990149148238" at="26,62,27,16" concept="6" />
+      <node id="2749287990149148238" at="32,68,33,21" concept="6" />
+      <node id="2749287990149148238" at="39,29,40,18" concept="6" />
+      <node id="2749287990149148239" at="43,24,44,37" concept="6" />
+      <node id="2749287990149148240" at="45,22,46,35" concept="6" />
+      <node id="2749287990149148238" at="47,5,48,16" concept="6" />
+      <node id="2749287990149148238" at="53,73,54,39" concept="5" />
+      <node id="2749287990149148238" at="55,22,56,18" concept="6" />
+      <node id="2749287990149148238" at="57,5,58,32" concept="6" />
+      <node id="2749287990149148238" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_PartnerType#()V" />
+      <node id="2749287990149148238" at="38,88,41,5" concept="3" />
+      <node id="2749287990149148238" at="54,39,57,5" concept="3" />
+      <node id="2749287990149148238" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149148238" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="2749287990149148238" at="41,5,47,5" concept="11" />
+      <node id="2749287990149148238" at="51,0,60,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149148238" at="36,0,50,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="2749287990149148238" at="14,46,15,177" />
+      <scope id="2749287990149148238" at="26,62,27,16" />
+      <scope id="2749287990149148238" at="32,68,33,21" />
+      <scope id="2749287990149148238" at="39,29,40,18" />
+      <scope id="2749287990149148239" at="43,24,44,37" />
+      <scope id="2749287990149148240" at="45,22,46,35" />
+      <scope id="2749287990149148238" at="55,22,56,18" />
+      <scope id="2749287990149148238" at="14,0,17,0" />
+      <scope id="2749287990149148238" at="24,0,29,0" />
+      <scope id="2749287990149148238" at="30,0,35,0" />
+      <scope id="2749287990149148238" at="53,73,58,32">
+        <var name="index" id="2749287990149148238" />
+      </scope>
+      <scope id="2749287990149148238" at="51,0,60,0">
+        <var name="idValue" id="2749287990149148238" />
+      </scope>
+      <scope id="2749287990149148238" at="38,88,48,16" />
+      <scope id="2749287990149148238" at="36,0,50,0">
+        <var name="memberName" id="2749287990149148238" />
+      </scope>
+      <unit id="2749287990149148238" at="12,0,61,0" name="ErasmusPrograms.structure.EnumerationDescriptor_PartnerType" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148238" at="35,0,36,0" concept="2" trace="myEnumerationPartnerType" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148247">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148247" at="12,0,13,0" concept="2" trace="props_AdmissionStructure" />
+      <node id="2749287990149148247" at="33,47,34,76" concept="5" />
+      <node id="2749287990149148247" at="34,76,35,43" concept="1" />
+      <node id="2749287990149148247" at="35,43,36,50" concept="1" />
+      <node id="2749287990149148247" at="37,9,38,40" concept="6" />
+      <node id="2749287990149148247" at="32,52,37,9" concept="3" />
+      <scope id="2749287990149148247" at="33,47,36,50">
+        <var name="cpb" id="2749287990149148247" />
+      </scope>
+      <scope id="2749287990149148247" at="32,52,38,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148247" at="12,0,13,0" concept="8" trace="AdmissionStructure" />
+      <node id="2749287990149148247" at="28,116,29,57" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148247" at="19,0,20,0" concept="2" trace="myConceptAdmissionStructure" />
+      <node id="2749287990149148247" at="58,52,59,43" concept="6" />
+      <node id="2749287990149148247" at="100,76,101,168" concept="5" />
+      <node id="2749287990149148247" at="101,168,102,34" concept="1" />
+      <node id="2749287990149148247" at="102,34,103,102" concept="1" />
+      <node id="2749287990149148247" at="103,102,104,17" concept="1" />
+      <node id="2749287990149158455" at="104,17,105,205" concept="1" />
+      <node id="2749287990149158457" at="105,205,106,211" concept="1" />
+      <node id="2749287990149158460" at="106,211,107,199" concept="1" />
+      <node id="2749287990149148247" at="107,199,108,25" concept="1" />
+      <node id="2749287990149148247" at="108,25,109,22" concept="6" />
+      <node id="2749287990149148247" at="100,0,111,0" concept="9" trace="createDescriptorForAdmissionStructure#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148247" at="58,52,59,43" />
+      <scope id="2749287990149148247" at="100,76,109,22">
+        <var name="b" id="2749287990149148247" />
+      </scope>
+      <scope id="2749287990149148247" at="100,0,111,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148248">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148248" at="22,0,23,0" concept="2" trace="props_Results" />
+      <node id="2749287990149148248" at="102,36,103,76" concept="5" />
+      <node id="2749287990149148248" at="103,76,104,41" concept="1" />
+      <node id="2749287990149148248" at="104,41,105,39" concept="1" />
+      <node id="2749287990149148248" at="106,9,107,29" concept="6" />
+      <node id="2749287990149148248" at="101,41,106,9" concept="3" />
+      <scope id="2749287990149148248" at="102,36,105,39">
+        <var name="cpb" id="2749287990149148248" />
+      </scope>
+      <scope id="2749287990149148248" at="101,41,107,29" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148248" at="22,0,23,0" concept="8" trace="Results" />
+      <node id="2749287990149148248" at="38,50,39,46" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148248" at="29,0,30,0" concept="2" trace="myConceptResults" />
+      <node id="2749287990149148248" at="78,41,79,32" concept="6" />
+      <node id="2749287990149148248" at="210,65,211,157" concept="5" />
+      <node id="2749287990149148248" at="211,157,212,34" concept="1" />
+      <node id="2749287990149148248" at="212,34,213,102" concept="1" />
+      <node id="2749287990149148248" at="213,102,214,17" concept="1" />
+      <node id="2749287990149148249" at="214,17,215,111" concept="1" />
+      <node id="2749287990149148251" at="215,111,216,120" concept="1" />
+      <node id="2749287990149148255" at="216,120,217,126" concept="1" />
+      <node id="2749287990149148259" at="217,126,218,122" concept="1" />
+      <node id="2749287990149148248" at="218,122,219,23" concept="1" />
+      <node id="2749287990149148248" at="219,23,220,22" concept="6" />
+      <node id="2749287990149148248" at="210,0,222,0" concept="9" trace="createDescriptorForResults#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148248" at="78,41,79,32" />
+      <scope id="2749287990149148248" at="210,65,220,22">
+        <var name="b" id="2749287990149148248" />
+      </scope>
+      <scope id="2749287990149148248" at="210,0,222,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149148266">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149148266" at="21,0,22,0" concept="2" trace="props_Requirement" />
+      <node id="2749287990149148266" at="96,40,97,76" concept="5" />
+      <node id="2749287990149148266" at="97,76,98,43" concept="1" />
+      <node id="2749287990149148266" at="99,9,100,33" concept="6" />
+      <node id="2749287990149148266" at="95,45,99,9" concept="3" />
+      <scope id="2749287990149148266" at="96,40,98,43">
+        <var name="cpb" id="2749287990149148266" />
+      </scope>
+      <scope id="2749287990149148266" at="95,45,100,33" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149148266" at="21,0,22,0" concept="8" trace="Requirement" />
+      <node id="2749287990149148266" at="37,47,38,50" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149148266" at="28,0,29,0" concept="2" trace="myConceptRequirement" />
+      <node id="2749287990149148266" at="76,45,77,36" concept="6" />
+      <node id="2749287990149148266" at="201,69,202,161" concept="5" />
+      <node id="2749287990149148266" at="202,161,203,33" concept="1" />
+      <node id="2749287990149148266" at="203,33,204,71" concept="1" />
+      <node id="2749287990149148266" at="204,71,205,102" concept="1" />
+      <node id="2749287990149148266" at="205,102,206,17" concept="1" />
+      <node id="2749287990149148266" at="206,17,207,27" concept="1" />
+      <node id="2749287990149148266" at="207,27,208,22" concept="6" />
+      <node id="2749287990149148266" at="201,0,210,0" concept="9" trace="createDescriptorForRequirement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149148266" at="76,45,77,36" />
+      <scope id="2749287990149148266" at="201,69,208,22">
+        <var name="b" id="2749287990149148266" />
+      </scope>
+      <scope id="2749287990149148266" at="201,0,210,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158363">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149158363" at="17,0,18,0" concept="2" trace="props_DocumentRequirement" />
+      <node id="2749287990149158363" at="68,48,69,76" concept="5" />
+      <node id="2749287990149158363" at="69,76,70,35" concept="1" />
+      <node id="2749287990149158363" at="70,35,71,51" concept="1" />
+      <node id="2749287990149158363" at="72,9,73,41" concept="6" />
+      <node id="2749287990149158363" at="67,53,72,9" concept="3" />
+      <scope id="2749287990149158363" at="68,48,71,51">
+        <var name="cpb" id="2749287990149158363" />
+      </scope>
+      <scope id="2749287990149158363" at="67,53,73,41" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149158363" at="17,0,18,0" concept="8" trace="DocumentRequirement" />
+      <node id="2749287990149158363" at="33,56,34,58" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158363" at="24,0,25,0" concept="2" trace="myConceptDocumentRequirement" />
+      <node id="2749287990149158363" at="68,53,69,44" concept="6" />
+      <node id="2749287990149158363" at="154,77,155,169" concept="5" />
+      <node id="2749287990149158363" at="155,169,156,34" concept="1" />
+      <node id="2749287990149158363" at="156,34,157,53" concept="7" />
+      <node id="2749287990149158363" at="157,53,158,76" concept="1" />
+      <node id="2749287990149158363" at="158,76,159,102" concept="1" />
+      <node id="2749287990149158363" at="159,102,160,17" concept="1" />
+      <node id="2749287990149158366" at="160,17,161,117" concept="1" />
+      <node id="2749287990149158363" at="161,117,162,36" concept="1" />
+      <node id="2749287990149158363" at="162,36,163,22" concept="6" />
+      <node id="2749287990149158363" at="154,0,165,0" concept="9" trace="createDescriptorForDocumentRequirement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149158363" at="68,53,69,44" />
+      <scope id="2749287990149158363" at="154,77,163,22">
+        <var name="b" id="2749287990149158363" />
+      </scope>
+      <scope id="2749287990149158363" at="154,0,165,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158369">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149158369" at="19,0,20,0" concept="2" trace="props_LanguageRequirement" />
+      <node id="2749287990149158369" at="82,48,83,76" concept="5" />
+      <node id="2749287990149158369" at="83,76,84,35" concept="1" />
+      <node id="2749287990149158369" at="84,35,85,51" concept="1" />
+      <node id="2749287990149158369" at="86,9,87,41" concept="6" />
+      <node id="2749287990149158369" at="81,53,86,9" concept="3" />
+      <scope id="2749287990149158369" at="82,48,85,51">
+        <var name="cpb" id="2749287990149158369" />
+      </scope>
+      <scope id="2749287990149158369" at="81,53,87,41" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149158369" at="19,0,20,0" concept="8" trace="LanguageRequirement" />
+      <node id="2749287990149158369" at="35,52,36,58" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158369" at="26,0,27,0" concept="2" trace="myConceptLanguageRequirement" />
+      <node id="2749287990149158369" at="72,53,73,44" concept="6" />
+      <node id="2749287990149158369" at="180,77,181,169" concept="5" />
+      <node id="2749287990149158369" at="181,169,182,34" concept="1" />
+      <node id="2749287990149158369" at="182,34,183,53" concept="7" />
+      <node id="2749287990149158369" at="183,53,184,76" concept="1" />
+      <node id="2749287990149158369" at="184,76,185,102" concept="1" />
+      <node id="2749287990149158369" at="185,102,186,17" concept="1" />
+      <node id="2749287990149158372" at="186,17,187,176" concept="1" />
+      <node id="2749287990149158369" at="187,176,188,36" concept="1" />
+      <node id="2749287990149158369" at="188,36,189,22" concept="6" />
+      <node id="2749287990149158369" at="180,0,191,0" concept="9" trace="createDescriptorForLanguageRequirement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149158369" at="72,53,73,44" />
+      <scope id="2749287990149158369" at="180,77,189,22">
+        <var name="b" id="2749287990149158369" />
+      </scope>
+      <scope id="2749287990149158369" at="180,0,191,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158375">
+    <file name="EnumerationDescriptor_DegreeLevel.java">
+      <node id="2749287990149158375" at="14,46,15,177" concept="10" />
+      <node id="2749287990149158377" at="18,0,19,0" concept="2" trace="myMember_BACHELOR_0" />
+      <node id="2749287990149158379" at="19,0,20,0" concept="2" trace="myMember_MASTER_0" />
+      <node id="2749287990149158375" at="21,0,22,0" concept="2" trace="myIndex" />
+      <node id="2749287990149158375" at="22,0,23,0" concept="2" trace="myMembers" />
+      <node id="2749287990149158375" at="26,62,27,31" concept="6" />
+      <node id="2749287990149158375" at="32,68,33,21" concept="6" />
+      <node id="2749287990149158375" at="39,29,40,18" concept="6" />
+      <node id="2749287990149158377" at="43,22,44,35" concept="6" />
+      <node id="2749287990149158379" at="45,20,46,33" concept="6" />
+      <node id="2749287990149158375" at="47,5,48,16" concept="6" />
+      <node id="2749287990149158375" at="53,73,54,39" concept="5" />
+      <node id="2749287990149158375" at="55,22,56,18" concept="6" />
+      <node id="2749287990149158375" at="57,5,58,32" concept="6" />
+      <node id="2749287990149158375" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_DegreeLevel#()V" />
+      <node id="2749287990149158375" at="38,88,41,5" concept="3" />
+      <node id="2749287990149158375" at="54,39,57,5" concept="3" />
+      <node id="2749287990149158375" at="24,0,29,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149158375" at="30,0,35,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="2749287990149158375" at="41,5,47,5" concept="11" />
+      <node id="2749287990149158375" at="51,0,60,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149158375" at="36,0,50,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="2749287990149158375" at="14,46,15,177" />
+      <scope id="2749287990149158375" at="26,62,27,31" />
+      <scope id="2749287990149158375" at="32,68,33,21" />
+      <scope id="2749287990149158375" at="39,29,40,18" />
+      <scope id="2749287990149158377" at="43,22,44,35" />
+      <scope id="2749287990149158379" at="45,20,46,33" />
+      <scope id="2749287990149158375" at="55,22,56,18" />
+      <scope id="2749287990149158375" at="14,0,17,0" />
+      <scope id="2749287990149158375" at="24,0,29,0" />
+      <scope id="2749287990149158375" at="30,0,35,0" />
+      <scope id="2749287990149158375" at="53,73,58,32">
+        <var name="index" id="2749287990149158375" />
+      </scope>
+      <scope id="2749287990149158375" at="51,0,60,0">
+        <var name="idValue" id="2749287990149158375" />
+      </scope>
+      <scope id="2749287990149158375" at="38,88,48,16" />
+      <scope id="2749287990149158375" at="36,0,50,0">
+        <var name="memberName" id="2749287990149158375" />
+      </scope>
+      <unit id="2749287990149158375" at="12,0,61,0" name="ErasmusPrograms.structure.EnumerationDescriptor_DegreeLevel" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158375" at="33,0,34,0" concept="2" trace="myEnumerationDegreeLevel" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158382">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149158382" at="13,0,14,0" concept="2" trace="props_ApplicationProcess" />
+      <node id="2749287990149158382" at="40,47,41,76" concept="5" />
+      <node id="2749287990149158382" at="41,76,42,53" concept="1" />
+      <node id="2749287990149158382" at="42,53,43,50" concept="1" />
+      <node id="2749287990149158382" at="44,9,45,40" concept="6" />
+      <node id="2749287990149158382" at="39,52,44,9" concept="3" />
+      <scope id="2749287990149158382" at="40,47,43,50">
+        <var name="cpb" id="2749287990149158382" />
+      </scope>
+      <scope id="2749287990149158382" at="39,52,45,40" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149158382" at="13,0,14,0" concept="8" trace="ApplicationProcess" />
+      <node id="2749287990149158382" at="29,57,30,57" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158382" at="20,0,21,0" concept="2" trace="myConceptApplicationProcess" />
+      <node id="2749287990149158382" at="60,52,61,43" concept="6" />
+      <node id="2749287990149158382" at="111,76,112,168" concept="5" />
+      <node id="2749287990149158382" at="112,168,113,34" concept="1" />
+      <node id="2749287990149158382" at="113,34,114,102" concept="1" />
+      <node id="2749287990149158382" at="114,102,115,17" concept="1" />
+      <node id="2749287990149158464" at="115,17,116,198" concept="1" />
+      <node id="2749287990149158382" at="116,198,117,35" concept="1" />
+      <node id="2749287990149158382" at="117,35,118,22" concept="6" />
+      <node id="2749287990149158382" at="111,0,120,0" concept="9" trace="createDescriptorForApplicationProcess#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149158382" at="60,52,61,43" />
+      <scope id="2749287990149158382" at="111,76,118,22">
+        <var name="b" id="2749287990149158382" />
+      </scope>
+      <scope id="2749287990149158382" at="111,0,120,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158383">
+    <file name="EnumerationDescriptor_LanguageLevel.java">
+      <node id="2749287990149158383" at="14,48,15,179" concept="10" />
+      <node id="2749287990149158384" at="18,0,19,0" concept="2" trace="myMember_A1_0" />
+      <node id="2749287990149158385" at="19,0,20,0" concept="2" trace="myMember_A2_0" />
+      <node id="2749287990149158388" at="20,0,21,0" concept="2" trace="myMember_B1_0" />
+      <node id="2749287990149158392" at="21,0,22,0" concept="2" trace="myMember_B2_0" />
+      <node id="2749287990149158397" at="22,0,23,0" concept="2" trace="myMember_C1_0" />
+      <node id="2749287990149158403" at="23,0,24,0" concept="2" trace="myMember_C2_0" />
+      <node id="2749287990149158383" at="25,0,26,0" concept="2" trace="myIndex" />
+      <node id="2749287990149158383" at="26,0,27,0" concept="2" trace="myMembers" />
+      <node id="2749287990149158383" at="30,62,31,16" concept="6" />
+      <node id="2749287990149158383" at="36,68,37,21" concept="6" />
+      <node id="2749287990149158383" at="43,29,44,18" concept="6" />
+      <node id="2749287990149158384" at="47,16,48,29" concept="6" />
+      <node id="2749287990149158385" at="49,16,50,29" concept="6" />
+      <node id="2749287990149158388" at="51,16,52,29" concept="6" />
+      <node id="2749287990149158392" at="53,16,54,29" concept="6" />
+      <node id="2749287990149158397" at="55,16,56,29" concept="6" />
+      <node id="2749287990149158403" at="57,16,58,29" concept="6" />
+      <node id="2749287990149158383" at="59,5,60,16" concept="6" />
+      <node id="2749287990149158383" at="65,73,66,39" concept="5" />
+      <node id="2749287990149158383" at="67,22,68,18" concept="6" />
+      <node id="2749287990149158383" at="69,5,70,32" concept="6" />
+      <node id="2749287990149158383" at="14,0,17,0" concept="0" trace="EnumerationDescriptor_LanguageLevel#()V" />
+      <node id="2749287990149158383" at="42,88,45,5" concept="3" />
+      <node id="2749287990149158383" at="66,39,69,5" concept="3" />
+      <node id="2749287990149158383" at="28,0,33,0" concept="4" trace="getDefault#()Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149158383" at="34,0,39,0" concept="4" trace="getMembers#()Ljava/util/List;" />
+      <node id="2749287990149158383" at="63,0,72,0" concept="4" trace="getMember#(J)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <node id="2749287990149158383" at="45,5,59,5" concept="11" />
+      <node id="2749287990149158383" at="40,0,62,0" concept="4" trace="getMember#(Ljava/lang/String;)Ljetbrains/mps/smodel/runtime/EnumerationDescriptor/MemberDescriptor;" />
+      <scope id="2749287990149158383" at="14,48,15,179" />
+      <scope id="2749287990149158383" at="30,62,31,16" />
+      <scope id="2749287990149158383" at="36,68,37,21" />
+      <scope id="2749287990149158383" at="43,29,44,18" />
+      <scope id="2749287990149158384" at="47,16,48,29" />
+      <scope id="2749287990149158385" at="49,16,50,29" />
+      <scope id="2749287990149158388" at="51,16,52,29" />
+      <scope id="2749287990149158392" at="53,16,54,29" />
+      <scope id="2749287990149158397" at="55,16,56,29" />
+      <scope id="2749287990149158403" at="57,16,58,29" />
+      <scope id="2749287990149158383" at="67,22,68,18" />
+      <scope id="2749287990149158383" at="14,0,17,0" />
+      <scope id="2749287990149158383" at="28,0,33,0" />
+      <scope id="2749287990149158383" at="34,0,39,0" />
+      <scope id="2749287990149158383" at="65,73,70,32">
+        <var name="index" id="2749287990149158383" />
+      </scope>
+      <scope id="2749287990149158383" at="63,0,72,0">
+        <var name="idValue" id="2749287990149158383" />
+      </scope>
+      <scope id="2749287990149158383" at="42,88,60,16" />
+      <scope id="2749287990149158383" at="40,0,62,0">
+        <var name="memberName" id="2749287990149158383" />
+      </scope>
+      <unit id="2749287990149158383" at="12,0,73,0" name="ErasmusPrograms.structure.EnumerationDescriptor_LanguageLevel" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158383" at="34,0,35,0" concept="2" trace="myEnumerationLanguageLevel" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158410">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149158410" at="24,0,25,0" concept="2" trace="props_Step" />
+      <node id="2749287990149158410" at="116,33,117,76" concept="5" />
+      <node id="2749287990149158410" at="117,76,118,35" concept="1" />
+      <node id="2749287990149158410" at="118,35,119,36" concept="1" />
+      <node id="2749287990149158410" at="120,9,121,26" concept="6" />
+      <node id="2749287990149158410" at="115,38,120,9" concept="3" />
+      <scope id="2749287990149158410" at="116,33,119,36">
+        <var name="cpb" id="2749287990149158410" />
+      </scope>
+      <scope id="2749287990149158410" at="115,38,121,26" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149158410" at="24,0,25,0" concept="8" trace="Step" />
+      <node id="2749287990149158410" at="40,50,41,43" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158410" at="31,0,32,0" concept="2" trace="myConceptStep" />
+      <node id="2749287990149158410" at="82,38,83,29" concept="6" />
+      <node id="2749287990149158410" at="235,62,236,154" concept="5" />
+      <node id="2749287990149158410" at="236,154,237,34" concept="1" />
+      <node id="2749287990149158410" at="237,34,238,71" concept="1" />
+      <node id="2749287990149158410" at="238,71,239,102" concept="1" />
+      <node id="2749287990149158410" at="239,102,240,17" concept="1" />
+      <node id="2749287990149158413" at="240,17,241,117" concept="1" />
+      <node id="2749287990149158416" at="241,117,242,115" concept="1" />
+      <node id="2749287990149158420" at="242,115,243,113" concept="1" />
+      <node id="2749287990149158410" at="243,113,244,20" concept="1" />
+      <node id="2749287990149158410" at="244,20,245,22" concept="6" />
+      <node id="2749287990149158410" at="235,0,247,0" concept="9" trace="createDescriptorForStep#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149158410" at="82,38,83,29" />
+      <scope id="2749287990149158410" at="235,62,245,22">
+        <var name="b" id="2749287990149158410" />
+      </scope>
+      <scope id="2749287990149158410" at="235,0,247,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/2749287990149158426">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="2749287990149158426" at="16,0,17,0" concept="2" trace="props_DegreeRequirement" />
+      <node id="2749287990149158426" at="61,46,62,76" concept="5" />
+      <node id="2749287990149158426" at="62,76,63,35" concept="1" />
+      <node id="2749287990149158426" at="63,35,64,49" concept="1" />
+      <node id="2749287990149158426" at="65,9,66,39" concept="6" />
+      <node id="2749287990149158426" at="60,51,65,9" concept="3" />
+      <scope id="2749287990149158426" at="61,46,64,49">
+        <var name="cpb" id="2749287990149158426" />
+      </scope>
+      <scope id="2749287990149158426" at="60,51,66,39" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="2749287990149158426" at="16,0,17,0" concept="8" trace="DegreeRequirement" />
+      <node id="2749287990149158426" at="32,45,33,56" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="2749287990149158426" at="23,0,24,0" concept="2" trace="myConceptDegreeRequirement" />
+      <node id="2749287990149158426" at="66,51,67,42" concept="6" />
+      <node id="2749287990149158426" at="142,75,143,167" concept="5" />
+      <node id="2749287990149158426" at="143,167,144,34" concept="1" />
+      <node id="2749287990149158426" at="144,34,145,53" concept="7" />
+      <node id="2749287990149158426" at="145,53,146,76" concept="1" />
+      <node id="2749287990149158426" at="146,76,147,102" concept="1" />
+      <node id="2749287990149158426" at="147,102,148,17" concept="1" />
+      <node id="2749287990149158429" at="148,17,149,118" concept="1" />
+      <node id="2749287990149158432" at="149,118,150,176" concept="1" />
+      <node id="2749287990149158426" at="150,176,151,34" concept="1" />
+      <node id="2749287990149158426" at="151,34,152,22" concept="6" />
+      <node id="2749287990149158426" at="142,0,154,0" concept="9" trace="createDescriptorForDegreeRequirement#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="2749287990149158426" at="66,51,67,42" />
+      <scope id="2749287990149158426" at="142,75,152,22">
+        <var name="b" id="2749287990149158426" />
+      </scope>
+      <scope id="2749287990149158426" at="142,0,154,0" />
+    </file>
+  </root>
+  <root nodeRef="r:40de22c9-4125-47c0-9445-9ee5570f6c96(ErasmusPrograms.structure)/709174712668729539">
+    <file name="ConceptPresentationAspectImpl.java">
+      <node id="709174712668729539" at="18,0,19,0" concept="2" trace="props_ErasmusProgram" />
+      <node id="709174712668729539" at="75,43,76,76" concept="5" />
+      <node id="709174712668729539" at="76,76,77,35" concept="1" />
+      <node id="709174712668729539" at="77,35,78,46" concept="1" />
+      <node id="709174712668729539" at="79,9,80,36" concept="6" />
+      <node id="709174712668729539" at="74,48,79,9" concept="3" />
+      <scope id="709174712668729539" at="75,43,78,46">
+        <var name="cpb" id="709174712668729539" />
+      </scope>
+      <scope id="709174712668729539" at="74,48,80,36" />
+    </file>
+    <file name="LanguageConceptSwitch.java">
+      <node id="709174712668729539" at="18,0,19,0" concept="8" trace="ErasmusProgram" />
+      <node id="709174712668729539" at="34,58,35,52" concept="1" />
+    </file>
+    <file name="StructureAspectDescriptor.java">
+      <node id="709174712668729539" at="25,0,26,0" concept="2" trace="myConceptErasmusProgram" />
+      <node id="709174712668729539" at="70,48,71,39" concept="6" />
+      <node id="709174712668729539" at="165,72,166,163" concept="5" />
+      <node id="709174712668729539" at="166,163,167,33" concept="1" />
+      <node id="709174712668729539" at="167,33,168,71" concept="1" />
+      <node id="709174712668729539" at="168,71,169,101" concept="1" />
+      <node id="709174712668729539" at="169,101,170,17" concept="1" />
+      <node id="2749287990149923085" at="170,17,171,109" concept="1" />
+      <node id="2749287990149148157" at="171,109,172,119" concept="1" />
+      <node id="2749287990149158446" at="172,119,173,205" concept="1" />
+      <node id="2749287990149158440" at="173,205,174,205" concept="1" />
+      <node id="2749287990149158449" at="174,205,175,208" concept="1" />
+      <node id="8411917052159161557" at="175,208,176,212" concept="1" />
+      <node id="709174712668729539" at="176,212,177,31" concept="1" />
+      <node id="709174712668729539" at="177,31,178,22" concept="6" />
+      <node id="709174712668729539" at="165,0,180,0" concept="9" trace="createDescriptorForErasmusProgram#()Ljetbrains/mps/smodel/runtime/ConceptDescriptor;" />
+      <scope id="709174712668729539" at="70,48,71,39" />
+      <scope id="709174712668729539" at="165,72,178,22">
+        <var name="b" id="709174712668729539" />
+      </scope>
+      <scope id="709174712668729539" at="165,0,180,0" />
+    </file>
+  </root>
+</debug-info>
+

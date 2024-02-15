@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<product version="3" modelHash="5siosrhcbxio7dbglsnjkrh3pj1z5gv">
+  <files names="AdmissionStructure_Editor.java:AdmissionStructure_EditorBuilder_a.java:ApplicationProcess_Editor.java:ApplicationProcess_EditorBuilder_a.java:AssociatePartner_Editor.java:AssociatePartner_EditorBuilder_a.java:Course_Editor.java:Course_EditorBuilder_a.java:DegreeRequirement_Editor.java:DegreeRequirement_EditorBuilder_a.java:DocumentRequirement_Editor.java:DocumentRequirement_EditorBuilder_a.java:EditorAspectDescriptorImpl.java:ErasmusProgram_Editor.java:ErasmusProgram_EditorBuilder_a.java:LanguageRequirement_Editor.java:LanguageRequirement_EditorBuilder_a.java:Location_Editor.java:Location_EditorBuilder_a.java:Results_Editor.java:Results_EditorBuilder_a.java:Scholarship_Editor.java:Scholarship_EditorBuilder_a.java:Step_Editor.java:Step_EditorBuilder_a.java:University_Editor.java:University_EditorBuilder_a.java" />
+</product>
+

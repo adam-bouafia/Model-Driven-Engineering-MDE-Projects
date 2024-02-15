@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+<plugin>
+  <extension point="org.eclipse.sirius.componentization">
+    <component class="mde.a5.design.Activator"
+               id="mde.a5.design"
+	       name="a5">
+    </component>
+  </extension>
+</plugin>
